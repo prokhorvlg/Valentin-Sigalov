@@ -7,7 +7,7 @@ window.onscroll = function() {
 setInterval(function(){
   if (scrolled) {
     scrolled = false;
-    if (window.pageYOffset > 500){
+    if (window.pageYOffset > 100){
       scrolledDown();
     }
     else {
@@ -18,12 +18,28 @@ setInterval(function(){
 
 function scrolledDown(){
   var titleContainer = document.getElementById("titleContainer");
+  var titleName = document.getElementById("titleName");
+  var titleSecondary = document.getElementById("titleSecondary");
 
-  //titleContainer.style.position = "fixed";
+
+  titleSecondary.style.height = "0px";
+  titleSecondary.style.opacity = "0";
+
+  titleContainer.style.right = "calc(100% - 200px)";
+  titleName.style.fontSize = "1em";
+
 }
 
 function scrolledUp(){
   var titleContainer = document.getElementById("titleContainer");
+  var titleName = document.getElementById("titleName");
+  var titleSecondary = document.getElementById("titleSecondary");
 
-  //titleContainer.style.position = "absolute";
+  titleSecondary.style.opacity = "1";
+  titleSecondary.style.height = "40px";
+  
+
+  titleContainer.style.right = "0";
+  titleName.style.fontSize = "6em";
+  
 }
