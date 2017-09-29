@@ -13,7 +13,7 @@ h6 {
 
 #titlePlaceholder {
   position: relative;
-  height: 100vh; 
+  height: calc( 100vh ); 
   width: 100%;
 }
 
@@ -24,11 +24,14 @@ h6 {
   right: 0;
   bottom: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   transition:  0.3s ease-in-out;
 
-  background-color:  rgba(0,0,0,0.1);
+  padding-top: calc(50vh - 100px);
+
+  background-color:  rgba(22,22,22,1);
+  color: #fff;
 }
 #titleContainerContent {
   /*min-width: calc(100vw - 40px);
@@ -36,28 +39,46 @@ h6 {
 }
 #titleContainerContentInner {
   margin-left: 150px;
+  transition:  0.1s ease-in-out;
   /*text-align: center;*/
 }
 #titleContainerContentImage{
   float: left;
   width: 130px;
+  /*text-align: center;*/
+  border:  none;
+  border-radius: 50%;
+  padding-left:  0px;
+  transition: 0.3s ease-in-out;
 }
 #titleName {
   font-size: 6em;
 
   margin: 0;
   margin-top: 10px;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+
+  text-align: center;
+  width: 960px;
 }
 #titleSecondary {
   font-size: 2em;
   margin: 0;
   height: 40px;
-  transition:  0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 #titleImage {
   display: block;
   width: 130px;
+  background-color: black;
+  border-radius: 50%;
+}
+#titleRule {
+  width: 960px;
+  border-width: 1px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  /*margin-top: 0px;*/
 }
 /*
 @media (min-width: 768px){
