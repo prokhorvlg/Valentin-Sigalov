@@ -13,7 +13,8 @@ h6 {
 
 #titlePlaceholder {
   position: relative;
-  height: calc( 100vh ); 
+  /* height: calc( 100vh ); */
+  height: 800px;
   width: 100%;
 }
 
@@ -87,7 +88,6 @@ h6 {
     width: 100vh;
   }
 }*/
-
 
 header.masthead {
   position: relative;

@@ -9,8 +9,8 @@ var scrollCalledUp = false;
 
 setInterval(function(){
   if (scrolled) {
-    scrolled = false;
-    if (window.pageYOffset > 100){
+    if (window.pageYOffset > 1){
+      scrolled = false;
       if (scrollCalledDown == false){
         scrollCalledDown = true;
         scrolledDown();
@@ -31,8 +31,6 @@ var pushTimeout;
 var fontSizeTimeout;
 var secondaryOpacityTimeout;
 var primaryFontSizeTimeout;
-
-
 
 function scrolledDown(){
   
