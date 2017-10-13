@@ -65,6 +65,13 @@ h6 {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 1400px) {
+  #titleContainerContent1 {
+    height: auto;
+    padding-top:  100px;
+    padding-bottom:  100px;
+  }
+}
 
 .titleContainerContent1Flex {
   padding: 10px;
@@ -141,6 +148,13 @@ h6 {
 
   user-select: none;
 }
+@media (max-width: 1400px) {
+  .titleContainerContent2Image {
+    padding-left: 0px;
+    padding-right:  0px;
+  }
+}
+
 
 #titleContainerContent3 {
   height: 5vh;
@@ -202,7 +216,7 @@ h6 {
 
 #title2descWD {
   margin-top: -170px;
-  margin-left: -6px;
+  
 }
 
 #title2desc3D {
