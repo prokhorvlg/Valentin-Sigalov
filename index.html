@@ -12,40 +12,67 @@
 
     <title>Valentin Sigalov</title>
 
+    <!--     jQuery     -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <script src="js/jquery-ui.min.js"></script>
+
     <!-- Bootstrap Core -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Web Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link href="css/style.css" rel="stylesheet">
 
-  </head>
+	</head>
 
-  <body id="page-top">
+	<body id="page-top">
 
-    <!-- This is the nav/main bar. -->
-
-    <div id="titlePlaceholder"></div>
+    <div id="titlePlaceholder">
+    </div>
 
     <header id="titleContainer">
-      <div id="titleContainerContent">
-        
-          <div id="titleContainerContentImage"><img src="http://via.placeholder.com/200x200" class="titleImage" width="130" /></div>
-          <div id="titleContainerContentInner">
-           <p id="titleSecondary">Hi, my name is</p>
-           <h1 id="titleName">VALENTIN SIGALOV</h1>
-           <hr id="titleRule">
-        </div>
+      <div id="titleContainerContent1">
+		<div class="titleContainerContent1Flex" id="titleContainerContent1Image">
+			<div id="titleContainerContent1Inner">
+				<img src="img/headicon.png" width="159" style="margin-top: 8px;" />
+			</div>
+		</div>
+		<div class="titleContainerContent1Flex" id="titleContainerContent1Name">
+			<h1 class="titleName">VALENTIN<span style="color: #2bb5e9; font-weight: 400;">SIGALOV</span></h1>
+		</div>
+		<div class="titleContainerContent1Flex" id="titleContainerContent1Scroll">
+			<img src="img/scroll_arrow.png" width="20" style="margin-bottom: -5px;" class="scrollArrow"/>
+			<hr class="titlehr">
+		</div>
+      </div>
+      <div id="titleContainerContent2">
+      	<div class="titleContainerContent2Image" id="titleContainerContent2Image1">
+      		<img src="img/img_graphicdesign.png" class="title2Image" width="405" />
+      		<div class="title2desc" id="title2descGD"><h2>GRAPHIC DESIGNER</h2></div>
+      	</div>
+      	<div class="titleContainerContent2Image" id="titleContainerContent2Image2">
+      		<img src="img/img_webdev.png" class="title2Image" width="405" />
+      		<div class="title2desc" id="title2descWD"><h2>WEB DEVELOPER</h2></div>
+      	</div>
+      	<div class="titleContainerContent2Image" id="titleContainerContent2Image3">
+      		<img src="img/img_3dmodeler.png" class="title2Image" width="405" />
+      		<div class="title2desc" id="title2desc3D"><h2>3D MODELER</h2></div>
+      	</div>
+      </div>
+      <div id="titleContainerContent3">
+      	
       </div>
     </header>
 
-    <section id="graphicDesignIntro" class="bg-light parallax_s4" style="background-image: url(img/background-main/nedrybg.png); background-size: cover; background-position: right bottom; background-repeat: no-repeat; background-attachment: fixed; padding-left: 200px;">
+    <section id="graphicDesignIntro" class="contentDiv bg-light parallax_s4">
       <div class="container" style="">
         <div class="row">
           <div class="col-lg-6 text-left">
@@ -66,53 +93,8 @@
       </div>
     </section>
 
-<div style="padding-left: 200px;">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ornare neque, at accumsan metus. Fusce vitae posuere erat. Duis non felis et dui hendrerit scelerisque. Sed faucibus nisl velit, eget efficitur purus congue eu. Cras viverra turpis et accumsan egestas. Phasellus varius justo ac nisl pulvinar dictum. Mauris sed lobortis enim. Vivamus vehicula pellentesque felis elementum dictum. Nunc dolor leo, ornare in velit quis, egestas laoreet lorem. Etiam faucibus, velit non vulputate vulputate, lectus urna varius erat, vitae mollis leo magna vitae diam. Sed congue elit at massa mattis malesuada. Pellentesque et enim nec lorem sollicitudin accumsan nec ut nisi. In accumsan consequat neque ut iaculis. Morbi tristique augue nec dui sollicitudin elementum. Maecenas venenatis lectus ac ex laoreet dignissim. Pellentesque ac dolor vel est fermentum pharetra non vitae augue.</p>
+	<script src="js/script.js"></script>
 
-<p>Cras dignissim quis quam vitae tristique. Nullam sagittis nec nisi a consequat. Integer tristique tincidunt dignissim. Etiam quis nisl fermentum, convallis risus a, lacinia eros. Proin nec risus vitae felis venenatis porta at sit amet velit. Nam placerat, arcu vitae tempus gravida, eros urna sodales ex, aliquet porta neque enim vel felis. Maecenas id mi mi. Phasellus ornare felis eu orci vehicula vestibulum. Sed at nunc non quam elementum tempor ut sed urna. Aenean semper mauris at justo lobortis, ut consectetur nunc condimentum. Quisque quis velit eu lorem fermentum dignissim. Praesent libero sapien, pharetra nec justo ut, congue iaculis tellus.</p>
-
-<p>Fusce tincidunt dolor leo. Nullam elementum est ut libero rhoncus faucibus. Integer nisi justo, dapibus eget aliquam vitae, rhoncus eget elit. Nam eget imperdiet ex. Morbi dapibus egestas nunc vitae imperdiet. Ut quis purus ac dolor consectetur mattis vel ut nisl. Fusce orci dui, feugiat id velit molestie, placerat mollis nibh. Aliquam orci eros, faucibus eu aliquam at, varius a augue.</p>
-
-<p>In cursus in eros sed luctus. Donec in sapien commodo, tempus odio at, ultrices magna. Proin tincidunt aliquet scelerisque. Nunc velit nisl, dapibus nec placerat vitae, iaculis eget tellus. Phasellus aliquet eros lobortis ante volutpat, sit amet tempus augue suscipit. Nam id arcu efficitur, consequat ante a, accumsan nisl. Quisque eu venenatis dolor. Praesent auctor lobortis ultricies.</p>
-
-<p>Etiam dui nulla, varius sed mi sit amet, efficitur maximus risus. Nulla facilisi. Vivamus mollis odio sed ipsum mattis, non ornare arcu mollis. Sed a ante vel risus luctus convallis hendrerit vel quam. Nullam venenatis libero eget sollicitudin sodales. Sed aliquam metus sit amet arcu bibendum, lobortis mattis urna consectetur. Fusce sit amet efficitur orci. Vivamus eleifend condimentum leo ac ultricies. Cras neque nisi, fermentum in porta eu, volutpat nec turpis. Nunc non euismod lorem, et semper sem.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ornare neque, at accumsan metus. Fusce vitae posuere erat. Duis non felis et dui hendrerit scelerisque. Sed faucibus nisl velit, eget efficitur purus congue eu. Cras viverra turpis et accumsan egestas. Phasellus varius justo ac nisl pulvinar dictum. Mauris sed lobortis enim. Vivamus vehicula pellentesque felis elementum dictum. Nunc dolor leo, ornare in velit quis, egestas laoreet lorem. Etiam faucibus, velit non vulputate vulputate, lectus urna varius erat, vitae mollis leo magna vitae diam. Sed congue elit at massa mattis malesuada. Pellentesque et enim nec lorem sollicitudin accumsan nec ut nisi. In accumsan consequat neque ut iaculis. Morbi tristique augue nec dui sollicitudin elementum. Maecenas venenatis lectus ac ex laoreet dignissim. Pellentesque ac dolor vel est fermentum pharetra non vitae augue.</p>
-
-<p>Cras dignissim quis quam vitae tristique. Nullam sagittis nec nisi a consequat. Integer tristique tincidunt dignissim. Etiam quis nisl fermentum, convallis risus a, lacinia eros. Proin nec risus vitae felis venenatis porta at sit amet velit. Nam placerat, arcu vitae tempus gravida, eros urna sodales ex, aliquet porta neque enim vel felis. Maecenas id mi mi. Phasellus ornare felis eu orci vehicula vestibulum. Sed at nunc non quam elementum tempor ut sed urna. Aenean semper mauris at justo lobortis, ut consectetur nunc condimentum. Quisque quis velit eu lorem fermentum dignissim. Praesent libero sapien, pharetra nec justo ut, congue iaculis tellus.</p>
-
-<p>Fusce tincidunt dolor leo. Nullam elementum est ut libero rhoncus faucibus. Integer nisi justo, dapibus eget aliquam vitae, rhoncus eget elit. Nam eget imperdiet ex. Morbi dapibus egestas nunc vitae imperdiet. Ut quis purus ac dolor consectetur mattis vel ut nisl. Fusce orci dui, feugiat id velit molestie, placerat mollis nibh. Aliquam orci eros, faucibus eu aliquam at, varius a augue.</p>
-
-<p>In cursus in eros sed luctus. Donec in sapien commodo, tempus odio at, ultrices magna. Proin tincidunt aliquet scelerisque. Nunc velit nisl, dapibus nec placerat vitae, iaculis eget tellus. Phasellus aliquet eros lobortis ante volutpat, sit amet tempus augue suscipit. Nam id arcu efficitur, consequat ante a, accumsan nisl. Quisque eu venenatis dolor. Praesent auctor lobortis ultricies.</p>
-
-<p>Etiam dui nulla, varius sed mi sit amet, efficitur maximus risus. Nulla facilisi. Vivamus mollis odio sed ipsum mattis, non ornare arcu mollis. Sed a ante vel risus luctus convallis hendrerit vel quam. Nullam venenatis libero eget sollicitudin sodales. Sed aliquam metus sit amet arcu bibendum, lobortis mattis urna consectetur. Fusce sit amet efficitur orci. Vivamus eleifend condimentum leo ac ultricies. Cras neque nisi, fermentum in porta eu, volutpat nec turpis. Nunc non euismod lorem, et semper sem.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ornare neque, at accumsan metus. Fusce vitae posuere erat. Duis non felis et dui hendrerit scelerisque. Sed faucibus nisl velit, eget efficitur purus congue eu. Cras viverra turpis et accumsan egestas. Phasellus varius justo ac nisl pulvinar dictum. Mauris sed lobortis enim. Vivamus vehicula pellentesque felis elementum dictum. Nunc dolor leo, ornare in velit quis, egestas laoreet lorem. Etiam faucibus, velit non vulputate vulputate, lectus urna varius erat, vitae mollis leo magna vitae diam. Sed congue elit at massa mattis malesuada. Pellentesque et enim nec lorem sollicitudin accumsan nec ut nisi. In accumsan consequat neque ut iaculis. Morbi tristique augue nec dui sollicitudin elementum. Maecenas venenatis lectus ac ex laoreet dignissim. Pellentesque ac dolor vel est fermentum pharetra non vitae augue.</p>
-
-<p>Cras dignissim quis quam vitae tristique. Nullam sagittis nec nisi a consequat. Integer tristique tincidunt dignissim. Etiam quis nisl fermentum, convallis risus a, lacinia eros. Proin nec risus vitae felis venenatis porta at sit amet velit. Nam placerat, arcu vitae tempus gravida, eros urna sodales ex, aliquet porta neque enim vel felis. Maecenas id mi mi. Phasellus ornare felis eu orci vehicula vestibulum. Sed at nunc non quam elementum tempor ut sed urna. Aenean semper mauris at justo lobortis, ut consectetur nunc condimentum. Quisque quis velit eu lorem fermentum dignissim. Praesent libero sapien, pharetra nec justo ut, congue iaculis tellus.</p>
-
-<p>Fusce tincidunt dolor leo. Nullam elementum est ut libero rhoncus faucibus. Integer nisi justo, dapibus eget aliquam vitae, rhoncus eget elit. Nam eget imperdiet ex. Morbi dapibus egestas nunc vitae imperdiet. Ut quis purus ac dolor consectetur mattis vel ut nisl. Fusce orci dui, feugiat id velit molestie, placerat mollis nibh. Aliquam orci eros, faucibus eu aliquam at, varius a augue.</p>
-
-<p>In cursus in eros sed luctus. Donec in sapien commodo, tempus odio at, ultrices magna. Proin tincidunt aliquet scelerisque. Nunc velit nisl, dapibus nec placerat vitae, iaculis eget tellus. Phasellus aliquet eros lobortis ante volutpat, sit amet tempus augue suscipit. Nam id arcu efficitur, consequat ante a, accumsan nisl. Quisque eu venenatis dolor. Praesent auctor lobortis ultricies.</p>
-
-<p>Etiam dui nulla, varius sed mi sit amet, efficitur maximus risus. Nulla facilisi. Vivamus mollis odio sed ipsum mattis, non ornare arcu mollis. Sed a ante vel risus luctus convallis hendrerit vel quam. Nullam venenatis libero eget sollicitudin sodales. Sed aliquam metus sit amet arcu bibendum, lobortis mattis urna consectetur. Fusce sit amet efficitur orci. Vivamus eleifend condimentum leo ac ultricies. Cras neque nisi, fermentum in porta eu, volutpat nec turpis. Nunc non euismod lorem, et semper sem.</p>
-</div>
-
-
-    <!--
-    <section id="quote" class="bg-dark2" style="padding: 0px; height: 0px; opacity: 0.2;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="quoteShuffle" id="mainQuote" style="font-family: 'Roboto Condensed', Arial, sans-serif;"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  -->
-
-  <script src="js/script.js"></script>
-
-  </body>
+	</body>
 
 </html>
