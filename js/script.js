@@ -1,4 +1,3 @@
-
 var scrollListener = true;
 
 var scrollCalledDown = false;
@@ -24,6 +23,11 @@ function checkHeight(){
     }
 }
 
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // what you want to run in mobile
+}
+else {
+
 checkHeight();
 
 var scrolledLock = false;
@@ -32,30 +36,34 @@ var scrollAnimMilliseconds = 400;
 
   $(window).scroll(function(event){
     if (scrollListener) {
-    var st = $(this).scrollTop();
-    if (st > lastScrollTop) { // if you're scrolling down...
-      if (scrolledLock == false) { // if the lock hasn't been triggered...
-        if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){ // if you are scrolling within the header region...
-          scrolledLock = true; // lock scrolling...
-          setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds); // ...until the animation is over
-          $(window).scrollTo('#graphicDesignIntro', scrollAnimMilliseconds); // and animate the scroll
-          scrolledDown();
+      if ($(window).width() > 1400) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) { // if you're scrolling down...
+          if (scrolledLock == false) { // if the lock hasn't been triggered...
+            if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){ // if you are scrolling within the header region...
+              scrolledLock = true; // lock scrolling...
+              setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds); // ...until the animation is over
+              $(window).scrollTo('#graphicDesignIntro', scrollAnimMilliseconds); // and animate the scroll
+              scrolledDown();
+            }
+          }
+        } 
+        else { // and vice versa when scrolling up
+          if (scrolledLock == false){
+            if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){
+              scrolledLock = true;
+              setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds);
+              $(window).scrollTo(0, scrollAnimMilliseconds);
+              scrolledUp();
+            }
+          }
         }
-      }
-    } 
-    else { // and vice versa when scrolling up
-      if (scrolledLock == false){
-        if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){
-          scrolledLock = true;
-          setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds);
-          $(window).scrollTo(0, scrollAnimMilliseconds);
-          scrolledUp();
-        }
-      }
-    }
-     lastScrollTop = st;
+         lastScrollTop = st;
+     }
    }
   });
+
+}
 
 var stage1T;
 var stage2T;
