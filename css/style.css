@@ -25,6 +25,10 @@ h6 {
   }
 }*/
 
+body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 1400px) {
   body {
     margin: 0;
@@ -57,6 +61,9 @@ a:active, a:focus {
   background-color: #0d0d0d;
 
   color: #fff;
+
+  border-right: 2px solid #fff;
+  z-index: 999;
 }
 @media (max-width: 1400px) {
   #titleContainer {
@@ -71,6 +78,7 @@ a:active, a:focus {
   width: 100%;
 
   height: 47vh;
+  min-height: 00px;
 
   display: flex;
   flex-direction: column;
@@ -87,6 +95,8 @@ a:active, a:focus {
 
 .titleContainerContent1Flex {
   padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
   transition: 0.3s ease-in-out;
 }
 
@@ -279,6 +289,21 @@ a:active, a:focus {
   height: 63vh;
 }
 
+.titleSidebarNavItem {
+  width: 200px;
+  
+  border-top: 2px solid rgba(255,255,255,0.1);
+  padding-top: 14px;
+  padding-bottom: 10px;
+
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+}
+
+.titleSidebarNavItem a {
+
+}
+
 /* BODY CSS */
 
 @media (min-width: 1200px){
@@ -286,6 +311,81 @@ a:active, a:focus {
       width: 96%;
   }
 }
+
+.contentDivHeader {
+  color: #fff;
+
+  background: linear-gradient(to right, #0d0d0d 0%, #0d0d0d 75%, #161616 75%, #161616 100%);
+
+  padding-top: 300px;
+  padding-left: 280px;
+  padding-bottom: 60px;
+
+}
+
+.contentDivHeader h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.35em;
+  font-weight: 300;
+}
+
+.contentDivHeaderLeftPanel {
+  max-width: 900px;
+}
+
+.contentDivHeaderImage {
+  width: calc( 100vw );
+  text-align: right;
+}
+
+.contentDivHeaderImageContainer {
+  padding-top: 120px;
+  width: 27vw;
+  text-align: center;
+  float: right;
+}
+
+.contentDivTitle {
+  background-color: #cfcfcf;
+  color: #000;
+  border-top: 2px solid white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.contentDivTitle h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.35em;
+  font-weight: 700;
+}
+
+.contentTitleIcon {
+  float: left;
+  margin-top: -9px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.contentDivTitle p {
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.gridBG {
+  position: absolute;
+  user-select: none;
+  margin-top: -283px;
+  margin-left: -68px;
+}
+
+.barGD {
+  margin-top: -92px;
+  margin-left: -100px;
+}
+
+
 
 /*
 

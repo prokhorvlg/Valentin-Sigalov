@@ -85,31 +85,30 @@ function scrolledDown(){
   clearTimeout(stage3T);
   clearTimeout(stage4T);
 
-  //titleContainer.style.position = "fixed";
+  titleContainerContent1Inner.style.width = "140px";
+  titleContainerContent1Inner.style.height = "140px";
+  titleContainerContent1Inner.style.marginTop = "-20px";
+  titleContainerContent1InnerIMG.style.width = "120px";
 
-  stage1T = setTimeout( function(){ 
-    titleContainerContent1Inner.style.width = "140px";
-    titleContainerContent1Inner.style.height = "140px";
-    titleContainerContent1Inner.style.marginTop = "-20px";
-    titleContainerContent1InnerIMG.style.width = "120px";
+  titleContainerContent1.style.height = "30vh";
 
-    titleContainerContent1.style.height = "30vh";
+  titleContainerContent2Image1.style.marginBottom = "250px";
+  titleContainerContent2Image2.style.marginBottom = "250px";
+  titleContainerContent2Image3.style.marginBottom = "250px";
 
-    titleContainerContent2Image1.style.opacity = "0";
-    titleContainerContent2Image2.style.opacity = "0";
-    titleContainerContent2Image3.style.opacity = "0";
+  titleContainerContent2Image1.style.opacity = "0";
+  titleContainerContent2Image2.style.opacity = "0";
+  titleContainerContent2Image3.style.opacity = "0";
 
-    titleName.style.fontSize = "16px";
-    titleName.style.letterSpacing = "0.1em";
-    titleName.style.fontWeight = "400";
+  titleName.style.fontSize = "16px";
+  titleName.style.letterSpacing = "0.1em";
+  titleName.style.fontWeight = "400";
 
-    titlehr.style.width = "160px";
-    titlehr.style.marginTop = "-20px";
-    scrollArrow.style.opacity = "0";
+  titlehr.style.width = "200px";
+  titlehr.style.marginTop = "-20px";
+  scrollArrow.style.opacity = "0";
 
-    titleContainerContent2.style.height = "65vh";
-
-  }, 5);
+  titleContainerContent2.style.height = "65vh";
 
   stage2T = setTimeout( function(){ 
 
@@ -129,11 +128,6 @@ function scrolledDown(){
     titleSidebarContainer.style.opacity = "1";
 
   }, 405);
-
-  stage4T = setTimeout( function(){ 
-
-    
-  }, 300);
 
 }
 
@@ -156,6 +150,7 @@ function scrolledUp(){
   var titleContainerContent2 = document.getElementById("titleContainerContent2");
 
   var titleSidebarContainer = document.getElementById("titleSidebarContainer");
+  var titleContainerContent1Scroll = document.getElementById("titleContainerContent1Scroll");
 
   clearTimeout(stage1T);
   clearTimeout(stage2T);
@@ -170,10 +165,6 @@ function scrolledUp(){
     titleContainerContent2.style.height = "48vh";
 
     titleSidebarContainer.style.opacity = "0";
-
-  stage1T = setTimeout( function(){ 
-
-  }, 5);
 
   stage2T = setTimeout( function(){ 
 
@@ -200,16 +191,15 @@ function scrolledUp(){
 
   stage3T = setTimeout( function(){ 
 
+    titleContainerContent2Image1.style.marginBottom = "-5px";
+    titleContainerContent2Image2.style.marginBottom = "-5px";
+    titleContainerContent2Image3.style.marginBottom = "-5px";
+
     titleContainerContent2Image1.style.opacity = "1";
     titleContainerContent2Image2.style.opacity = "1";
     titleContainerContent2Image3.style.opacity = "1";
 
-  }, 310);
-
-  stage4T = setTimeout( function(){ 
-
-    
-  }, 300);
+  }, 315);
 
 }
 
