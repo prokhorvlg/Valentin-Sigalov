@@ -5,6 +5,8 @@ var scrollCalledDown = false;
 var scrollCalledUp = false;
 var lastScrollTop = 0;
 
+var widthOfSidebar = 250;
+
 function checkHeight(){
     if (window.pageYOffset > 50){
       if (scrollCalledDown == false){
@@ -104,7 +106,7 @@ function scrolledDown(){
   titleName.style.letterSpacing = "0.1em";
   titleName.style.fontWeight = "400";
 
-  titlehr.style.width = "200px";
+  titlehr.style.width = widthOfSidebar + "px";
   titlehr.style.marginTop = "-20px";
   scrollArrow.style.opacity = "0";
 
@@ -116,7 +118,7 @@ function scrolledDown(){
     titleContainerContent2Image2.style.display = "none";
     titleContainerContent2Image3.style.display = "none";
 
-    titleContainer.style.right = "calc(100% - 200px)";
+    titleContainer.style.right = "calc(100% - " + widthOfSidebar + "px)";
 
     titleSidebarContainer.style.display = "block";
     

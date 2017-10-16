@@ -20,17 +20,21 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 
-    <!-- Bootstrap Core -->
+    <!--     Bootstrap Core     -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Web Fonts -->
+    <!--     Animate on Scroll Library     -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+
+    <!--     Web Fonts     -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
 
-    <!-- Custom Styles -->
+    <!--     Custom Styles     -->
     <link href="css/style.css" rel="stylesheet">
 
 	</head>
@@ -67,10 +71,22 @@
       			<a href="#3dmodel" onclick="scrollTo3D()">3D Modeler</a>
       		</div>
       		<div class="titleSidebarNavItem" id="titleSidebarNavItem4">
-      			<hr class="titlehr" style="width: 50px;">
+      			<a href="#" onclick="scrollTo3D()">Other Skills</a>
       		</div>
       		<div class="titleSidebarNavItem" id="titleSidebarNavItem5">
-      			<a href="#">About Me</a>
+      			<hr class="titlehr" style="width: 140px; border-color: #2bb5e9;">
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem6">
+      			<a href="#">About Myself</a>
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem7">
+      			<a href="#">Contact Me</a>
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem8">
+      			<hr class="titlehr" style="width: 140px; border-color: #2bb5e9;">
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem9">
+      			<a href="#">Back to Top</a>
       		</div>
       	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image1">
@@ -101,19 +117,16 @@
     	<img src="img/bgGrid.png" width="810" class="gridBG" />
     	<div class="container">
 	        <div class="row">
-	        	<div class="col-lg-8 text-left">
+	        	<div class="col-lg-12 text-left">
 		        	<h2>Graphic Designer</h2>
 		            <img src="img/barGD.png" width="586" class="barGD" />
 		            <div class="contentDivHeaderLeftPanel">
-			            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. </p>
-			            <p class="text-left">Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque.</p>
+			            <p class="text-left"><em>How I express my creativity in the language of clean layouts and futuristic logos.</em></p>
+			            <p class="text-left">Ever since I discovered graphic design and all things related when I accidentally took a "digital design" class in 11th grade, I've been fascinated by it, and continue to strive towards creating it.</p>
+			            <p class="text-left">Mostly self-taught, 4 years experience.</p>
 			        </div>
 	        	</div>
-		        <div class="col-lg-4 text-left">
-		        	<div class="contentDivHeaderRightPanel">
-			        	
-			        </div>
-		        </div>
+
 	        </div>
       </div>
     </section>
@@ -121,11 +134,130 @@
     <section id="graphicDesignSkills" class="contentDiv contentDivTitle">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 text-left">
+          <div class="col-lg-6 text-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
           	<img src="img/skills.png" width="37" class="contentTitleIcon"/><h2>Skills</h2>
           </div>
-          <div class="col-lg-6 text-left">
+          <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="text-right">Never, ever, stretch your text using transform tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphicDesignSkillsContent" class="contentDiv contentDivContent">
+      <div class="container">
+        <div class="row">
+        	<div class="contentPaddingDiv"></div>
+          <div class="col-lg-6 text-left">
+          	<h3>What I use:</h3>
+          	<hr class="contenthr">
+          	<ul>
+          		<li>
+          			<p><img src="img/program_logos/cc/cc.svg" width="20" class="miniAppImage"/><span style="color: #da1f26; font-weight: 700;">Adobe Creative Cloud/Suite</span></p>
+          			<p>As the industry standard software for most design, I've worked with nearly every tool in the Adobe arsenal for use in art in subjects ranging from logo and icon design to video editing and animation.</p>
+          			<ul>
+          				<li><p><img src="img/program_logos/cc/photoshop-cc.svg" width="20" class="miniAppImage"/><span style="color: #145fa6; font-weight: 700;">Photoshop</span></p></li>
+		          		<li><p><img src="img/program_logos/cc/illustrator-cc.svg" width="20" class="miniAppImage"/><span style="color: #bf6b18; font-weight: 700;">Illustrator</span></p></li>
+		          		<li><p><img src="img/program_logos/cc/indesign-cc.svg" width="20" class="miniAppImage"/><span style="color: #b21553; font-weight: 700;">InDesign</span></p></li>
+		          		<li><p><img src="img/program_logos/cc/premiere-cc.svg" width="20" class="miniAppImage"/><span style="color: #a01bbb; font-weight: 700;">Premiere Pro</span></p></li>
+		          		<li><p><img src="img/program_logos/cc/after-effects-cc.svg" width="20" class="miniAppImage"/><span style="color: #7f1ac7; font-weight: 700;">After Effects</span></p></li>
+          			</ul>
+          		</li>
+          		<li>
+          			<p><span style="font-weight: 700;">PaintTool SAI</span></p>
+          			<p>I've found that PaintTool SAI is a decent piece of software to use with a tablet for digital painting.</p>
+          		</li>
+          	</ul>
+          </div>
+          <div class="col-lg-6 text-left contentRightCol">
+            <h3>What I do:</h3>
+			<hr class="contenthr">
+            <p style="font-size: 12px; font-weight: 700;"><em>(Hover over the icons!)</em></p>
+            <div class="wid">
+                <div class="widInner">
+                    <img src="img/wid/gd/wid_gd1.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Logo Design</p></div>
+                </div>
+                <div class="widInner">
+                    <img src="img/wid/gd/wid_gd2.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Layout</p></div>
+                </div>
+                <div class="widInner">
+                    <img src="img/wid/gd/wid_gd3.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Photo<br>Manipulation</p></div>
+                </div>
+                <div class="widInner">
+                    <img src="img/wid/gd/wid_gd4.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Concept Art</p></div>
+                </div>
+                <div class="widInner">
+                    <img src="img/wid/gd/wid_gd5.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Video<br>Editing</p></div>
+                </div>
+            </div>
+
+
+            <!--
+          	<ul>
+          		<li>Emblem Design
+					<ul>
+          				<li>Creating logos from sketch to final product</li>
+          				<li>Designing icons for websites</li>
+          			</ul>
+          		</li>
+          		<li>Layout
+					<ul>
+          				<li>Mocking up web pages before implementation</li>
+          				<li>Setting layouts for print media</li>
+          			</ul>
+          		</li>
+          		<li>Photomanipulation
+          			<ul>
+          				<li>Fixing and modifying photos</li>
+          				<li>Kitbashing concept art</li>
+          			</ul>
+          		</li>
+          		<li>Concept Art
+          			<ul>
+          				<li>Vectoring illustration</li>
+          			</ul>
+          		</li>
+          		<li>Video Editing
+          			<ul>
+          				<li>Manipulating video timelines</li>
+          				<li>Animating logos and emblems</li>
+          			</ul>
+          		</li>
+          	</ul>
+            -->
+          </div>
+          <div class="contentPaddingDiv"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphicDesignExperience" class="contentDiv contentDivTitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-left">
+          	<img src="img/experience.png" width="37" class="contentTitleIcon"/><h2>Experience</h2>
+          </div>
+          <div class="col-lg-6 text-left">
+            <p class="text-right">Always remember to give your work ample breathing room. White space is just as important as content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphicDesignExperienceContent" class="contentDiv contentDivContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 text-left">
+          	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+          </div>
+          <div class="col-lg-4 text-left contentRightCol">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
           </div>
         </div>
       </div>
@@ -182,6 +314,12 @@
     </section>
 
 	<script src="js/script.js"></script>
+
+	<script>
+      AOS.init({
+        disable: 'mobile'
+      });
+    </script>
 
 	</body>
 
