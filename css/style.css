@@ -18,17 +18,27 @@ h6 {
   height: 100vh;
   width: 100%;
 }
-@media (max-width: 1400px) {
+/*@media (max-width: 1400px) {
   #titlePlaceholder {
     position: absolute;
     height: 0px;
   }
-}
+}*/
 
 @media (max-width: 1400px) {
   body {
     margin: 0;
   }
+}
+
+a {
+  color: #2bb5e9;
+}
+a:hover {
+  color: #A2DFF5;
+}
+a:active, a:focus {
+  color: #fff;
 }
 
 #titleContainer {
@@ -50,8 +60,9 @@ h6 {
 }
 @media (max-width: 1400px) {
   #titleContainer {
-    position: relative;
-    height: auto;
+    display: none;
+    /*position: relative;
+    height: auto;*/
   }
 }
 
@@ -64,6 +75,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1400px) {
   #titleContainerContent1 {
@@ -75,12 +87,14 @@ h6 {
 
 .titleContainerContent1Flex {
   padding: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .titleName {
   font-size: 30px;
   letter-spacing: 1.14em;
   font-weight: 300;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1050px) {
   .titleName {
@@ -94,11 +108,19 @@ h6 {
   width: 300px;
   border-color: white;
   border-width: 2px;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1050px) {
   .titlehr {
     width: 200px;
   }
+}
+
+.scrollArrow {
+  transition: 0.3s ease-in-out;
+  margin-bottom: -20px; 
+  opacity: 1;
+  width: 20px;
 }
 
 #titleContainerContent1Inner {
@@ -107,6 +129,12 @@ h6 {
   width:  180px;
   height:  180px;
   margin:  0 auto;
+  transition: 0.3s ease-in-out;
+}
+
+#titleContainerContent1InnerIMG {
+  width: 159px;
+  transition: 0.3s ease-in-out;
 }
 
 #titleContainerContent1Name {
@@ -128,6 +156,7 @@ h6 {
   align-items: flex-end;
 
   border-bottom: 2px solid white;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1400px) {
   #titleContainerContent2 {
@@ -147,6 +176,8 @@ h6 {
   margin-bottom:  -5px;
 
   user-select: none;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
 }
 @media (max-width: 1400px) {
   .titleContainerContent2Image {
@@ -216,7 +247,6 @@ h6 {
 
 #title2descWD {
   margin-top: -170px;
-  
 }
 
 #title2desc3D {
@@ -236,6 +266,24 @@ h6 {
   .contentDiv {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+/* TITLE SIDEBAR NAV */
+
+#titleSidebarContainer {
+  display: none;
+  opacity: 0;
+
+  transition: 0.3s ease-in-out;
+  height: 63vh;
+}
+
+/* BODY CSS */
+
+@media (min-width: 1200px){
+  .container {
+      width: 96%;
   }
 }
 

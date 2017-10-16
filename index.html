@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <script src="js/jquery-ui.min.js"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
     <!-- Bootstrap Core -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
@@ -42,29 +44,46 @@
       <div id="titleContainerContent1">
 		<div class="titleContainerContent1Flex" id="titleContainerContent1Image">
 			<div id="titleContainerContent1Inner">
-				<img src="img/headicon.png" width="159" style="margin-top: 8px;" />
+				<img src="img/headicon.png" style="margin-top: 8px;" id="titleContainerContent1InnerIMG" />
 			</div>
 		</div>
 		<div class="titleContainerContent1Flex" id="titleContainerContent1Name">
-			<h1 class="titleName">VALENTIN<span style="color: #2bb5e9; font-weight: 400;">SIGALOV</span></h1>
+			<h1 class="titleName" id="titleName">VALENTIN<span style="color: #2bb5e9; font-weight: 400;">SIGALOV</span></h1>
 		</div>
 		<div class="titleContainerContent1Flex" id="titleContainerContent1Scroll">
-			<img src="img/scroll_arrow.png" width="20" style="margin-bottom: -5px;" class="scrollArrow"/>
-			<hr class="titlehr">
+			<img src="img/scroll_arrow.png" class="scrollArrow" id="scrollArrow"/>
+			<hr class="titlehr" id="titlehr">
 		</div>
       </div>
       <div id="titleContainerContent2">
+      	<div id="titleSidebarContainer">
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem1">
+      			<a href="#graphicdesign" onclick="scrollToGD()">Graphic Designer</a>
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem2">
+      			<a href="#webdev" onclick="scrollToWD()">Web Developer</a>
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem3">
+      			<a href="#3dmodel" onclick="scrollTo3D()">3D Modeler</a>
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem4">
+      			<hr class="titlehr" style="width: 50px;">
+      		</div>
+      		<div class="titleSidebarNavItem" id="titleSidebarNavItem5">
+      			<a href="#">About Me</a>
+      		</div>
+      	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image1">
       		<img src="img/img_graphicdesign.png" class="title2Image" width="405" />
-      		<div class="title2desc" id="title2descGD"><h2>GRAPHIC DESIGNER</h2></div>
+      		<div class="title2desc" id="title2descGD" onclick="scrollToGD()"><h2>GRAPHIC DESIGNER</h2></div>
       	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image2">
       		<img src="img/img_webdev.png" class="title2Image" width="405" />
-      		<div class="title2desc" id="title2descWD"><h2>WEB DEVELOPER</h2></div>
+      		<div class="title2desc" id="title2descWD" onclick="scrollToWD()"><h2>WEB DEVELOPER</h2></div>
       	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image3">
       		<img src="img/img_3dmodeler.png" class="title2Image" width="405" />
-      		<div class="title2desc" id="title2desc3D"><h2>3D MODELER</h2></div>
+      		<div class="title2desc" id="title2desc3D" onclick="scrollTo3D()"><h2>3D MODELER</h2></div>
       	</div>
       </div>
       <div id="titleContainerContent3">
@@ -75,19 +94,73 @@
     <section id="graphicDesignIntro" class="contentDiv bg-light parallax_s4">
       <div class="container" style="">
         <div class="row">
-          <div class="col-lg-6 text-left">
+          <div class="col-lg-8 text-left">
             <h2>Graphic Designer</h2>
             <hr class="light" style="margin-left: 0px;">
-            <p class="text-justify">Dull, blank eyes stare back into yours, the light extinguished from behind them. Their emotion, conscience, morality, all dictated by nothing more than lines of code streaming directly into their prefrontal cortex.</p>
-            <p class="text-justify">You are looking at what mankind has become in the decades since the introduction of the cybernetic lobotomy.</p>
-            <p class="text-justify">During one of numerous conflicts between forgotten factions, a procedure was developed that would change humanity forever. A technology that turns an individual into a blank slate for any set of morals and ethics - the cybernetic lobotomy/prosthetic conscious - was the most incredible tool that any government could ask for. No longer did decisions have to be made difficult by emotion: soldiers could be programmed to fire at any enemy without remorse; spies would be perfectly capable of blending into even the most alien of cultures; officials didn't have to be swayed by either "good" or "bad" conscious and instead could work to the benefit of the state. The possibilities were endless.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
           </div>
-          <div class="col-lg-6 text-left">
-            <h2>A new kind of society</h2>
+          <div class="col-lg-4 text-left">
             <hr class="light" style="margin-left: 0px;">
-            <p class="text-justify">Things have changed. Cybernetic lobotomization swept every corner of society, from terrestrial urban sprawls to fringe colonial outposts. It can be found in each of the 5 major powers.</p>
+            <p class="text-justify">Nam vulputate nisl nibh, a cursus nunc aliquet sed. Nullam sit amet commodo nunc. Duis consequat, mi posuere pharetra mollis, nulla mi dapibus ipsum, at blandit neque metus sed est. Suspendisse potenti. Suspendisse potenti. Vivamus efficitur libero sit amet velit vulputate, ut varius orci ornare. Quisque porta luctus sapien non ornare. Aenean non consequat elit. Nulla id vehicula justo. Aenean non odio quis risus accumsan varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <p class="text-justify">Ideas that wouldn't have ever seen the light of day have made their way into everyday life. Amazing advances, such as ubiquitous computing and advanced AI, have been corrupted in the name of the state - used to establish and perfect personalized social engineering projects on the national scale. People are molded into the perfect populace en masse without even realizing it through the manipulation of their human nature.</p>
+    <section id="webDevIntro" class="contentDiv bg-light parallax_s4">
+      <div class="container" style="">
+        <div class="row">
+          <div class="col-lg-8 text-left">
+            <h2>Graphic Designer</h2>
+            <hr class="light" style="margin-left: 0px;">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+          </div>
+          <div class="col-lg-4 text-left">
+            <hr class="light" style="margin-left: 0px;">
+            <p class="text-justify">Nam vulputate nisl nibh, a cursus nunc aliquet sed. Nullam sit amet commodo nunc. Duis consequat, mi posuere pharetra mollis, nulla mi dapibus ipsum, at blandit neque metus sed est. Suspendisse potenti. Suspendisse potenti. Vivamus efficitur libero sit amet velit vulputate, ut varius orci ornare. Quisque porta luctus sapien non ornare. Aenean non consequat elit. Nulla id vehicula justo. Aenean non odio quis risus accumsan varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="3dModelIntro" class="contentDiv bg-light parallax_s4">
+      <div class="container" style="">
+        <div class="row">
+          <div class="col-lg-8 text-left">
+            <h2>Graphic Designer</h2>
+            <hr class="light" style="margin-left: 0px;">
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum porttitor risus, vel ornare velit varius vel. Integer sit amet sem interdum, pellentesque dolor quis, faucibus arcu. Vivamus in libero mauris. Nunc vel posuere risus, sed porta purus. Nulla ac convallis neque. Ut in nunc ligula. Nullam imperdiet justo in tincidunt tincidunt. Donec rhoncus finibus urna quis interdum. In hac habitasse platea dictumst. Cras in leo turpis. Nam pellentesque a metus at feugiat.</p>
+            <p class="text-justify">Aliquam sed massa a metus tempor laoreet. Nunc fringilla lorem vitae ullamcorper consequat. Donec consequat nisl vitae tempus lacinia. Vivamus nec neque sit amet leo hendrerit mattis. Aenean a arcu justo. Quisque purus tellus, malesuada sed rutrum vel, pellentesque at libero. Sed ornare, lectus at pellentesque malesuada, metus arcu vehicula lacus, sit amet varius metus dui ut felis. Quisque varius pharetra magna, non eleifend velit cursus a. Nullam ultrices risus id purus laoreet auctor. Nam sit amet mollis lacus. Donec accumsan ligula ac odio facilisis, vel ullamcorper metus imperdiet. Nam dictum magna non lectus elementum accumsan a sed libero.</p>
+          </div>
+          <div class="col-lg-4 text-left">
+            <hr class="light" style="margin-left: 0px;">
+            <p class="text-justify">Nam vulputate nisl nibh, a cursus nunc aliquet sed. Nullam sit amet commodo nunc. Duis consequat, mi posuere pharetra mollis, nulla mi dapibus ipsum, at blandit neque metus sed est. Suspendisse potenti. Suspendisse potenti. Vivamus efficitur libero sit amet velit vulputate, ut varius orci ornare. Quisque porta luctus sapien non ornare. Aenean non consequat elit. Nulla id vehicula justo. Aenean non odio quis risus accumsan varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
           </div>
         </div>
       </div>

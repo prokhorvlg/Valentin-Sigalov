@@ -1,16 +1,12 @@
-var scrolled = false;
 
-window.onscroll = function() {
-  scrolled = true;
-}
+var scrollListener = true;
 
 var scrollCalledDown = false;
 var scrollCalledUp = false;
+var lastScrollTop = 0;
 
-setInterval(function(){
-  if (scrolled) {
-    if (window.pageYOffset > 1){
-      scrolled = false;
+function checkHeight(){
+    if (window.pageYOffset > 50){
       if (scrollCalledDown == false){
         scrollCalledDown = true;
         scrolledDown();
@@ -24,82 +20,216 @@ setInterval(function(){
         setTimeout(function(){ scrollCalledUp = false; }, 400);
       }
     }
-  }
-}, 50);
+}
 
-var pushTimeout;
-var fontSizeTimeout;
-var secondaryOpacityTimeout;
-var primaryFontSizeTimeout;
+checkHeight();
+
+var scrolledLock = false;
+var scrollLeeway = 200;
+var scrollAnimMilliseconds = 400;
+
+  $(window).scroll(function(event){
+    if (scrollListener) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) { // if you're scrolling down...
+      if (scrolledLock == false) { // if the lock hasn't been triggered...
+        if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){ // if you are scrolling within the header region...
+          scrolledLock = true; // lock scrolling...
+          setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds); // ...until the animation is over
+          $(window).scrollTo('#graphicDesignIntro', scrollAnimMilliseconds); // and animate the scroll
+          scrolledDown();
+        }
+      }
+    } 
+    else { // and vice versa when scrolling up
+      if (scrolledLock == false){
+        if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){
+          scrolledLock = true;
+          setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds);
+          $(window).scrollTo(0, scrollAnimMilliseconds);
+          scrolledUp();
+        }
+      }
+    }
+     lastScrollTop = st;
+   }
+  });
+
+var stage1T;
+var stage2T;
+var stage3T;
+var stage4T;
 
 function scrolledDown(){
   
-    var titleContainer = document.getElementById("titleContainer");
-    var titleName = document.getElementById("titleName");
-    var titleSecondary = document.getElementById("titleSecondary");
-    var titleRule = document.getElementById("titleRule");
-    var titleContainerContentInner = document.getElementById("titleContainerContentInner");
-    var titleContainerContentImage = document.getElementById("titleContainerContentImage");
+  var titleContainer = document.getElementById("titleContainer");
 
-    clearTimeout(pushTimeout);
-    clearTimeout(fontSizeTimeout);
-    clearTimeout(secondaryOpacityTimeout);
-    clearTimeout(primaryFontSizeTimeout);
+  var titleContainerContent1Inner = document.getElementById("titleContainerContent1Inner");
+  var titleContainerContent1InnerIMG = document.getElementById("titleContainerContent1InnerIMG");
 
-    titleSecondary.style.height = "0px";
-    titleSecondary.style.opacity = "0";
+  var titleContainerContent1 = document.getElementById("titleContainerContent1");
 
-    titleName.style.fontSize = "1em";
-    primaryFontSizeTimeout = setTimeout( function(){ 
-      titleContainerContentImage.style.paddingLeft = "35px"; 
-      titleName.style.width = "200px"; 
-    }, 200);
+  var titleContainerContent2Image1 = document.getElementById("titleContainerContent2Image1");
+  var titleContainerContent2Image2 = document.getElementById("titleContainerContent2Image2");
+  var titleContainerContent2Image3 = document.getElementById("titleContainerContent2Image3");
 
-    titleContainerContentInner.style.paddingTop = "140px";
-    titleContainerContentInner.style.marginLeft = "0px";
+  var titleName = document.getElementById("titleName");
+  var titlehr = document.getElementById("titlehr");
+  var scrollArrow = document.getElementById("scrollArrow");
+  var titleContainerContent2 = document.getElementById("titleContainerContent2");
 
-    titleContainer.style.alignItems = "flex-start";
-    titleContainer.style.paddingTop = "35px";
+  var titleSidebarContainer = document.getElementById("titleSidebarContainer");
 
-    pushTimeout = setTimeout( function(){ titleContainer.style.right = "calc(100% - 200px)"; }, 200);
+  clearTimeout(stage1T);
+  clearTimeout(stage2T);
+  clearTimeout(stage3T);
+  clearTimeout(stage4T);
 
-    titleRule.style.width = "200px";
-    //titleRule.style.marginTop = "25px";
+  //titleContainer.style.position = "fixed";
+
+  stage1T = setTimeout( function(){ 
+    titleContainerContent1Inner.style.width = "140px";
+    titleContainerContent1Inner.style.height = "140px";
+    titleContainerContent1Inner.style.marginTop = "-20px";
+    titleContainerContent1InnerIMG.style.width = "120px";
+
+    titleContainerContent1.style.height = "30vh";
+
+    titleContainerContent2Image1.style.opacity = "0";
+    titleContainerContent2Image2.style.opacity = "0";
+    titleContainerContent2Image3.style.opacity = "0";
+
+    titleName.style.fontSize = "16px";
+    titleName.style.letterSpacing = "0.1em";
+    titleName.style.fontWeight = "400";
+
+    titlehr.style.width = "160px";
+    titlehr.style.marginTop = "-20px";
+    scrollArrow.style.opacity = "0";
+
+    titleContainerContent2.style.height = "65vh";
+
+  }, 5);
+
+  stage2T = setTimeout( function(){ 
+
+    titleContainerContent2Image1.style.display = "none";
+    titleContainerContent2Image2.style.display = "none";
+    titleContainerContent2Image3.style.display = "none";
+
+    titleContainer.style.right = "calc(100% - 200px)";
+
+    titleSidebarContainer.style.display = "block";
+    
+
+  }, 300);
+
+  stage3T = setTimeout( function(){ 
+
+    titleSidebarContainer.style.opacity = "1";
+
+  }, 405);
+
+  stage4T = setTimeout( function(){ 
+
+    
+  }, 300);
+
 }
 
 function scrolledUp(){
+
   var titleContainer = document.getElementById("titleContainer");
+
+  var titleContainerContent1Inner = document.getElementById("titleContainerContent1Inner");
+  var titleContainerContent1InnerIMG = document.getElementById("titleContainerContent1InnerIMG");
+
+  var titleContainerContent1 = document.getElementById("titleContainerContent1");
+
+  var titleContainerContent2Image1 = document.getElementById("titleContainerContent2Image1");
+  var titleContainerContent2Image2 = document.getElementById("titleContainerContent2Image2");
+  var titleContainerContent2Image3 = document.getElementById("titleContainerContent2Image3");
+
   var titleName = document.getElementById("titleName");
-  var titleSecondary = document.getElementById("titleSecondary");
-  var titleRule = document.getElementById("titleRule");
-  var titleContainerContentInner = document.getElementById("titleContainerContentInner");
-   var titleContainerContentImage = document.getElementById("titleContainerContentImage");
+  var titlehr = document.getElementById("titlehr");
+  var scrollArrow = document.getElementById("scrollArrow");
+  var titleContainerContent2 = document.getElementById("titleContainerContent2");
 
-  clearTimeout(pushTimeout);
-  clearTimeout(fontSizeTimeout);
-  clearTimeout(secondaryOpacityTimeout);
-  clearTimeout(primaryFontSizeTimeout);
+  var titleSidebarContainer = document.getElementById("titleSidebarContainer");
 
-  titleContainerContentImage.style.paddingLeft = "0px";
+  clearTimeout(stage1T);
+  clearTimeout(stage2T);
+  clearTimeout(stage3T);
+  clearTimeout(stage4T);
 
-  //titleRule.style.marginTop = "0px";
-  
-  pushTimeout = setTimeout( function(){ titleContainer.style.right = "0px"; }, 10);
-  fontSizeTimeout = setTimeout( function(){ 
-    titleName.style.fontSize = "6em"; 
-    titleContainerContentInner.style.paddingTop = "0px"; 
-    titleContainerContentInner.style.marginLeft = "150px"; 
-    titleSecondary.style.height = "40px"; 
-    titleRule.style.width = "960px";  
-  }, 200);
-  
-  titleName.style.width = "960px";
+  //titleContainer.style.position = "fixed";
 
-  secondaryOpacityTimeout = setTimeout( function(){ titleSecondary.style.opacity = "1"; }, 300);
+  titleContainer.style.right = "0";
 
-  titleContainer.style.alignItems = "flex-start";
-  titleContainer.style.paddingTop = "calc(50vh - 100px)";
+    titleContainerContent1.style.height = "47vh";
+    titleContainerContent2.style.height = "48vh";
 
+    titleSidebarContainer.style.opacity = "0";
 
-  
+  stage1T = setTimeout( function(){ 
+
+  }, 5);
+
+  stage2T = setTimeout( function(){ 
+
+    titleContainerContent2Image1.style.display = "block";
+    titleContainerContent2Image2.style.display = "block";
+    titleContainerContent2Image3.style.display = "block";
+
+    titleContainerContent1Inner.style.width = "180px";
+    titleContainerContent1Inner.style.height = "180px";
+    titleContainerContent1Inner.style.marginTop = "0px";
+    titleContainerContent1InnerIMG.style.width = "159px";
+
+    titleName.style.fontSize = "30px";
+    titleName.style.letterSpacing = "1.14em";
+    titleName.style.fontWeight = "300";
+
+    titlehr.style.width = "300px";
+    titlehr.style.marginTop = "16px";
+    scrollArrow.style.opacity = "1";
+
+    titleSidebarContainer.style.display = "none";
+    
+  }, 300);
+
+  stage3T = setTimeout( function(){ 
+
+    titleContainerContent2Image1.style.opacity = "1";
+    titleContainerContent2Image2.style.opacity = "1";
+    titleContainerContent2Image3.style.opacity = "1";
+
+  }, 310);
+
+  stage4T = setTimeout( function(){ 
+
+    
+  }, 300);
+
+}
+
+function scrollToGD(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#graphicDesignIntro', scrollAnimMilliseconds);
+  checkHeight();
+}
+
+function scrollToWD(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#webDevIntro', scrollAnimMilliseconds);
+  checkHeight();
+}
+
+function scrollTo3D(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#3dModelIntro', scrollAnimMilliseconds);
+  checkHeight();
 }
