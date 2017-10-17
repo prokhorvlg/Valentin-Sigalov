@@ -24,6 +24,12 @@ h6 {
   }
 }
 
+#insidePlaceholder {
+  padding-top: 10%;
+  padding-left: 50%;
+  font-size: 30px;
+}
+
 .widthOfSidebar {
   padding-left: 250px;
 }
@@ -84,7 +90,7 @@ h3 {
   background-color: #161616;
   width: 100%;
 
-  height: 47vh;
+  height: 50vh;
   min-height: 00px;
 
   display: flex;
@@ -98,6 +104,11 @@ h3 {
   padding-left: 0px;
   padding-right: 0px;
   transition: 0.3s ease-in-out;
+}
+@media (max-height: 900px) {
+  .titleContainerContent1Flex {
+    padding: 0px;
+  }
 }
 
 .titleName {
@@ -149,9 +160,18 @@ h3 {
   margin-bottom: -40px;
 }
 
+#titleContainerContent1Desc {
+  margin-top: 50px;
+  height: 60px;
+}
+
+#titleContainerContent1Desc p {
+  margin: 0px;
+}
+
 #titleContainerContent2 {
   width: 100%;
-  height: 48vh;
+  height: 45vh;
 
   display: flex;
   flex-direction: row;
@@ -251,13 +271,6 @@ h3 {
   justify-content: center;
 }
 
-.titleContainerContent1Flex {
-  padding: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
-  transition: 0.3s ease-in-out;
-}
-
 .titleMobileName {
   margin-top: 30px;
   font-size: 30px;
@@ -285,7 +298,8 @@ h3 {
 }
 
 .titleMobileBottom {
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .titleMobileContent1InnerIMG {
@@ -489,10 +503,31 @@ h3 {
 }
 @media (max-width: 1400px) {
   .contentDivHeader {
+    padding-top: 100px;
     padding-left: 60px;
     background: #0d0d0d;
   }
 }
+
+.contentDivMobileImage {
+  display: none;
+  background-color: #161616;
+
+  align-content: center;
+  justify-content: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  border-top: 2px solid white;
+}
+@media (max-width: 1400px) {
+  .contentDivMobileImage {
+    display: flex;
+  }
+}
+
+
 
 .contentDivHeader h2 {
   text-transform: uppercase;
@@ -577,7 +612,8 @@ h3 {
   position: absolute;
   user-select: none;
   margin-top: -283px;
-  margin-left: -18px;
+  margin-left: -68px;
+  opacity: 0.3;
 }
 @media (max-width: 1400px) {
   .gridBG {

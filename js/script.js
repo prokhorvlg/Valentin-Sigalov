@@ -23,6 +23,19 @@ function checkHeight(){
     }
 }
 
+var resizeTimer;
+
+$(window).on('resize', function(e) {
+
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+
+    checkHeight();
+            
+  }, 300);
+
+});
+
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         // what you want to run in mobile
 }
@@ -90,6 +103,8 @@ function scrolledDown(){
 
   var titleSidebarContainer = document.getElementById("titleSidebarContainer");
 
+  var titleContainerContent1Desc = document.getElementById("titleContainerContent1Desc");
+
   clearTimeout(stage1T);
   clearTimeout(stage2T);
   clearTimeout(stage3T);
@@ -118,6 +133,11 @@ function scrolledDown(){
   titlehr.style.marginTop = "-20px";
   scrollArrow.style.opacity = "0";
 
+  titleContainerContent1Desc.style.opacity = "0";
+  titleContainerContent1Desc.style.height = "0";
+  titleContainerContent1Desc.style.marginTop = "0px";
+  titleContainerContent1Desc.style.padding = "0px";
+
   titleContainerContent2.style.height = "65vh";
 
   stage2T = setTimeout( function(){ 
@@ -129,7 +149,7 @@ function scrolledDown(){
     titleContainer.style.right = "calc(100% - " + widthOfSidebar + "px)";
 
     titleSidebarContainer.style.display = "block";
-    
+    titleContainerContent1Desc.style.display = "none";
 
   }, 300);
 
@@ -162,6 +182,8 @@ function scrolledUp(){
   var titleSidebarContainer = document.getElementById("titleSidebarContainer");
   var titleContainerContent1Scroll = document.getElementById("titleContainerContent1Scroll");
 
+  var titleContainerContent1Desc = document.getElementById("titleContainerContent1Desc");
+
   clearTimeout(stage1T);
   clearTimeout(stage2T);
   clearTimeout(stage3T);
@@ -171,10 +193,12 @@ function scrolledUp(){
 
   titleContainer.style.right = "0";
 
-    titleContainerContent1.style.height = "47vh";
-    titleContainerContent2.style.height = "48vh";
+  titleContainerContent1.style.height = "50vh";
+  titleContainerContent2.style.height = "45vh";
 
-    titleSidebarContainer.style.opacity = "0";
+  titleSidebarContainer.style.opacity = "0";
+
+  titleContainerContent1Desc.style.display = "block";
 
   stage2T = setTimeout( function(){ 
 
@@ -196,6 +220,11 @@ function scrolledUp(){
     scrollArrow.style.opacity = "1";
 
     titleSidebarContainer.style.display = "none";
+
+    titleContainerContent1Desc.style.opacity = "1";
+    titleContainerContent1Desc.style.height = "60px";
+    titleContainerContent1Desc.style.marginTop = "50px";
+    titleContainerContent1Desc.style.padding = "10px";
     
   }, 300);
 
