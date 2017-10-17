@@ -36,20 +36,55 @@ $(window).on('resize', function(e) {
 
 });
 
+var scrolledLock = false;
+var scrollLeeway = 200;
+var scrollAnimMilliseconds = 400;
+
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         // what you want to run in mobile
 }
 else {
 
+
+$(".GD").waypoint(function() {
+  $('.titleSidebarNavItem').children('a').removeClass('activeNavItem');
+  $('#navGraphicDesign').children('a').addClass('activeNavItem');
+}, { offset: '0%'});
+$(".WD").waypoint(function() {
+  $('.titleSidebarNavItem').children('a').removeClass('activeNavItem');
+  $('#navWebDev').children('a').addClass('activeNavItem');
+}, { offset: '0%'});
+$(".3D").waypoint(function() {
+  $('.titleSidebarNavItem').children('a').removeClass('activeNavItem');
+  $('#nav3DModeler').children('a').addClass('activeNavItem');
+}, { offset: '0%'});
+
+// Other Skills: OS
+$(".OS").waypoint(function() {
+  $('.titleSidebarNavItem').children('a').removeClass('activeNavItem');
+  $('#navOtherSkills').children('a').addClass('activeNavItem');
+}, { offset: '0%'});
+
+// About Me: AM
+$(".AM").waypoint(function() {
+  $('.titleSidebarNavItem').children('a').removeClass('activeNavItem');
+  $('#navAboutMe').children('a').addClass('activeNavItem');
+}, { offset: '0%'});
+
+// Contact Me: CM
+$(".CM").waypoint(function() {
+  $('.titleSidebarNavItem').children('a').removeClass('activeNavItem');
+  $('#navContactMe').children('a').addClass('activeNavItem');
+}, { offset: '0%'});
+
 checkHeight();
 
-var scrolledLock = false;
-var scrollLeeway = 200;
-var scrollAnimMilliseconds = 400;
+
 
   $(window).scroll(function(event){
     if (scrollListener) {
       if ($(window).width() > 1400) {
+
         var st = $(this).scrollTop();
         if (st > lastScrollTop) { // if you're scrolling down...
           if (scrolledLock == false) { // if the lock hasn't been triggered...
@@ -253,6 +288,13 @@ function scrollToWD(){
   scrollListener = false;
   setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
   $(window).scrollTo('#webDevIntro', scrollAnimMilliseconds);
+  checkHeight();
+}
+
+function scrollToWDExp(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#webdevExperience', scrollAnimMilliseconds);
   checkHeight();
 }
 
