@@ -82,21 +82,38 @@ hr {
   border: 3px solid rgba(34, 187, 238, 1);
 }
 
+.buttonSkip {
+  padding-top: 60px !important;
+}
+
+.btnSkip {
+  max-width: 400px;
+}
+@media (max-width: 1400px) {
+  .btnSkip {
+    width: 100%;
+    max-width: 9000px;
+  }
+}
+
 .buttonCenter {
-  text-align: center !important;
-  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  /*display: flex;
+  justify-content: center;
+  flex-direction: column;*/
+
+  text-align: center;
 }
-.btn {
-  width: 100%;
+
+.buttonCenter h2 {
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: 700;
 }
-@media (min-width: 992px) {
-  .buttonCenter {
-    text-align: left !important;
-  }
-  .btn {
-    width: auto;
-  }
-}
+
+
 
 #titleContainer {
   position: fixed;
