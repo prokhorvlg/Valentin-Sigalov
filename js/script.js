@@ -91,7 +91,7 @@ checkHeight();
             if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){ // if you are scrolling within the header region...
               scrolledLock = true; // lock scrolling...
               setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds); // ...until the animation is over
-              $(window).scrollTo('#graphicDesignIntro', scrollAnimMilliseconds); // and animate the scroll
+              $(window).scrollTo('#aboutMeIntro', scrollAnimMilliseconds); // and animate the scroll
               scrolledDown();
             }
           }
