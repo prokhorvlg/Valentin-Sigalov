@@ -54,6 +54,21 @@ a:active, a:focus {
   color: #fff;
 }
 
+a.lightBG {
+  color: rgba(34, 187, 238, 1);
+  transition: 0.2s ease-in-out;
+  box-shadow: inset 0 0 0 0 rgba(34, 187, 238, 1);
+  text-decoration: none;
+}
+a.lightBG:hover {
+  color: #fff;
+  box-shadow: inset 0 100px 0 0 rgba(34, 187, 238, 1), 0px 0px 0px 3px rgba(34, 187, 238, 1);
+}
+a.lightBG:active, a.lightBG:focus {
+  color: #fff;
+  box-shadow: inset 0 100px 0 0 rgba(34, 187, 238, 1), 0px 0px 0px 3px rgba(34, 187, 238, 1);
+}
+
 h3 {
   font-size: 24px;
 }
@@ -310,6 +325,7 @@ hr {
 @media (max-width: 1400px) {
   #titleMobile {
     display: flex;
+    border-right: 0px solid #fff;
   }
 }
 
@@ -493,6 +509,16 @@ hr {
   .contentDiv {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+.contentHeaderHR {
+  border-width: 2px;
+  width: 486px;
+}
+@media (max-width: 600px) {
+  .contentHeaderHR {
+    width: 80vw;
   }
 }
 
@@ -733,6 +759,8 @@ hr {
   padding-bottom: 4px;
 }
 
+/* WHAT I DO (WID) FLEXBOX */
+
 .wid {
   display: flex;
   align-items: center;
@@ -797,6 +825,40 @@ hr {
   opacity: 0.2;
 }
 
+/* MODAL STYLING */
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 900px;
+  }
+}
+
+.modal-content {
+  width: 900px;
+}
+@media (max-width: 920px) {
+  .modal-content {
+    width: 98vw;
+
+  }
+}
+@media (max-width: 576px) {
+  .modal-content {
+    width: 96vw;
+  }
+}
+
+.modal-title {
+  color:  #2bb5e9;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+
 
 .contentDivExperienceList li {
   padding-top: 40px;
@@ -818,3 +880,6 @@ hr {
   padding-top: 0px;
 }
 
+.programListType {
+  font-weight: 700;
+}

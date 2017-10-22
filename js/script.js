@@ -304,3 +304,10 @@ function scrollTo3D(){
   $(window).scrollTo('#3dModelIntro', scrollAnimMilliseconds);
   checkHeight();
 }
+
+function scrollToAM(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#aboutMeIntro', scrollAnimMilliseconds);
+  checkHeight();
+}

@@ -71,6 +71,12 @@
         <div class="titleMobileContent2">
           <div class="titleMobileSidebarContainer">
             <div class="titleMobileSidebarNavItem">
+                <a href="#aboutme">About Me</a>
+            </div>
+            <div class="titleMobileSidebarNavItem">
+                <hr class="titleMobilehr" style="border-color: #2bb5e9;">
+            </div>
+            <div class="titleMobileSidebarNavItem">
                 <a href="#graphicdesign" onclick="scrollToGD()">Graphic Designer</a>
             </div>
             <div class="titleMobileSidebarNavItem">
@@ -84,9 +90,6 @@
             </div>
             <div class="titleMobileSidebarNavItem">
                 <hr class="titleMobilehr" style="border-color: #2bb5e9;">
-            </div>
-            <div class="titleMobileSidebarNavItem">
-                <a href="#">About Myself</a>
             </div>
             <div class="titleMobileSidebarNavItem">
                 <a href="#">Contact Me</a>
@@ -121,7 +124,7 @@
       <div id="titleContainerContent2">
       	<div id="titleSidebarContainer">
             <div class="titleSidebarNavItem navAboutMe" id="navAboutMe">
-                <a href="#">About Myself</a>
+                <a href="#aboutme" onclick="scrollToAM()" >About Me</a>
             </div>
             <div class="titleSidebarNavItem" id="titleSidebarNavItemBar1">
                 <hr class="titlehr" style="width: 140px; border-color: #2bb5e9;">
@@ -167,21 +170,48 @@
     </header>
 
     <section id="aboutMeIntro" class="AM contentDiv contentDivHeader">
-        <img src="img/bgGrid.png" width="810" class="gridBG" />
         <div class="container">
             <div class="row">
                 <div>
-                    <h2 >About Me</h2>
-                    <img src="img/barGD.png" width="586" class="barHeader" />
-                    <img src="img/barGDmobile.png" width="222" class="barHeaderMobile" />
-                    <div class="contentDivHeaderLeftPanel">
-                        <p class="text-left"><em>How I express my creativity in the language of clean layouts and futuristic logos.</em></p>
-                        <p class="text-left">Ever since I discovered graphic design and all things related when I accidentally took a digital design class in the 11th grade, I've been fascinated by it.</p>
-                        <p class="text-left">Mostly self-taught, 4 years experience.</p>
-                    </div>
+                    <h2>About Me</h2>
+                    <hr class="contentHeaderHR">
                 </div>
 
             </div>
+      </div>
+    </section>
+
+    <section id="aboutMeContent" class="AM contentDiv contentDivContent">
+      <div class="container">
+        <div class="row">
+            <div class="contentPaddingDiv"></div>
+          <div class="col-lg-6 text-left">
+            <h3>Hey there!</h3>
+            <hr class="contenthr">
+            <p>I'm a 20-year-old <strong>Computer Science</strong> student studying at Drexel University. I've lived my entire life in Philadelphia after being brought to the United States as a 10-month-old from Ukraine, and I've loved every moment of life in this city. </p>
+            <p>Aside from - obviously - being thankful for everything my dad has done for me, I'm probably most thankful for the fact that my professional aspirations and personal passions are perfectly aligned. I'm incredibly passionate about all things design and programming. I don't have any spare time, because when I'm not working, I'm <a class="lightBG" href="#aboutme" onclick="scrollToGD()">sketching a logo</a>, <a class="lightBG" href="#webdev" onclick="scrollToWD()">coding a website</a>, <a class="lightBG" href="#3dmodel" onclick="scrollTo3D()">designing a starship</a>, or desperately trying to learn to draw characters, because I love it!</p>
+            <p>Well, <em>okay</em>, I have other hobbies. I'm a scifi nerd. I live and breath everything science fiction: stories, worldbuilding, video games, and all. In fact, the main reason I picked up design and code was to create and show off my own fictional settings!</p>
+          </div>
+          <div class="col-lg-6 text-left contentRightCol">
+            <h3>Stuff I Like</h3>
+            <hr class="contenthr">
+            <p>Hover to see what it is, click to reveal a list!</p>
+            <div class="wid">
+                <div class="widInner" data-toggle="modal" data-target="#modalAMtvshows">
+                    <img src="img/wid/am/wid_am1.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>TV Shows</p></div>
+                </div>
+                <div class="widInner" data-toggle="modal" data-target="#modalAMvideogames">
+                    <img src="img/wid/am/wid_am2.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Video Games</p></div>
+                </div>
+                <div class="widInner" data-toggle="modal" data-target="#modalAMbooks">
+                    <img src="img/wid/am/wid_am3.png" width="100" height="100" class="widIMG" />
+                    <div class="widInnerP"><p>Books</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="contentPaddingDiv"></div>
       </div>
     </section>
 
@@ -397,32 +427,80 @@
       </div>
     </section>
 
+
+
     <section id="webdevSkillsContent" class="WD contentDiv contentDivContent">
       <div class="container">
         <div class="row">
-            <div class="contentPaddingDiv"></div>
-          <div class="col-lg-6 text-left">
+          <div class="contentPaddingDiv"></div>
+          <div class="col-lg-2 text-left"></div>
+          <div class="col-lg-8 text-left">
             <h3>What I use:</h3>
             <hr class="contenthr">
             <ul>
                 <li>
-                    <p><img src="img/program_logos/cc/cc.svg" width="20" class="miniAppImage"/><span style="color: #da1f26; font-weight: 700;">Adobe Creative Cloud/Suite</span></p>
-                    <p>As the industry standard software for most design, I've worked with nearly every tool in the Adobe arsenal for use in art in subjects ranging from logo and icon design to video editing and animation.</p>
+                    <p><span style="font-weight: 700;">Web Development Trifecta</span></p>
+                    <p>To develop sites, I have a full grasp on the web development trifecta (the three main languages used on websites), and many of their associated technologies.</p>
                     <ul>
-                        <li><p><img src="img/program_logos/cc/photoshop-cc.svg" width="20" class="miniAppImage"/><span style="color: #145fa6; font-weight: 700;">Photoshop</span></p></li>
-                        <li><p><img src="img/program_logos/cc/illustrator-cc.svg" width="20" class="miniAppImage"/><span style="color: #bf6b18; font-weight: 700;">Illustrator</span></p></li>
-                        <li><p><img src="img/program_logos/cc/indesign-cc.svg" width="20" class="miniAppImage"/><span style="color: #b21553; font-weight: 700;">InDesign</span></p></li>
-                        <li><p><img src="img/program_logos/cc/premiere-cc.svg" width="20" class="miniAppImage"/><span style="color: #a01bbb; font-weight: 700;">Premiere Pro</span></p></li>
-                        <li><p><img src="img/program_logos/cc/after-effects-cc.svg" width="20" class="miniAppImage"/><span style="color: #7f1ac7; font-weight: 700;">After Effects</span></p></li>
+                        <li><p><img src="img/program_logos/wd/html5.svg" width="20" class="miniAppImage"/><span style="color: #f1652a; font-weight: 700;">HTML5</span></p></li>
+                        <li><p><img src="img/program_logos/wd/css-3.svg" width="20" class="miniAppImage"/><span style="color: #2965f1; font-weight: 700;">CSS3</span></p></li>
+                        <li><p><img src="img/program_logos/wd/javascript.svg" width="20" class="miniAppImage"/><span style="color: #b0a12b; font-weight: 700;">JavaScript</span></p></li>
                     </ul>
                 </li>
+                <hr class="contenthr">
                 <li>
-                    <p><span style="font-weight: 700;">PaintTool SAI</span></p>
-                    <p>I've found that PaintTool SAI is a decent piece of software to use with a tablet for digital painting.</p>
+                    <p><span class="programListType">Front-End Libraries</span></p>
+                    <ul>
+                        <li>
+                            <p><img src="img/program_logos/wd/bootstrap-4.svg" width="20" class="miniAppImage"/><span class="programListType" style="color: #573e7d;">Bootstrap</span></p>
+                            <p>For fancy mobile friendly layouts.</p>
+                        </li>
+                        <li>
+                            <p><span class="programListType" style="color: #21609b;">◇&nbsp;&nbsp;jQuery</span><br>
+                            <img src="img/program_logos/wd/angular-icon.svg" width="20" class="miniAppImage"/><span class="programListType" style="color: #dd1b16;">AngularJS</span><br>
+                            <img src="img/program_logos/wd/nodejs-icon.svg" width="20" class="miniAppImage"/><span class="programListType" style="color: #8cc84b;">nodeJS</span></p>
+                            <p>For clean integration between front and back end functionalities, as well as expanding front-end abilities.</p>
+                        </li>
+                        <li>
+                            <p><img src="img/program_logos/wd/Logo_D3.svg.png" width="20" class="miniAppImage"/><span class="programListType" style="color: #ce6433;">d3js</span><br>
+                            <span class="programListType" style="color: #ff5500;">◇&nbsp;&nbsp;Telerik/Kendo UI</span><br>
+                            <span class="programListType" style="color: #000;">◇&nbsp;&nbsp;threejs</span><br>
+                            <span class="programListType" style="color: #e02127;">◇&nbsp;&nbsp;babylonJS</span></p>
+                            <p>For bringing data to life through visualization.</p>
+                        </li>
+                    </ul>
+                </li>
+                <hr class="contenthr">
+                <li>
+                    <p><span class="programListType">Back-End Technologies</span></p>
+                    <ul>
+                        <li>
+                            <p><span class="programListType" style="color: #6082bb;">◇&nbsp;&nbsp;PHP</span><br>
+                            <img src="img/program_logos/wd/csharp.png" width="20" class="miniAppImage"/><span class="programListType" style="color: #9b4f96;">C#</span></p>
+                            <p>For creating back-end structures that work.</p>
+                        </li>
+                        <li>
+                            <p><span class="programListType" style="color: #00546b;">◇&nbsp;&nbsp;MySQL</span><br>
+                            <p>For manipulating and interfacing with databases.</p>
+                        </li>
+                        <li>
+                            <p><img src="img/program_logos/wd/wordpress.png" width="20" class="miniAppImage"/><span class="programListType" style="color: #464442;">WordPress CMS</span></p>
+                            <p>To manage and create personal and commercial web projects, mostly for those that require to be maintained by individuals with little to no web experience.</p>
+                        </li>
+                    </ul>
                 </li>
             </ul>
           </div>
-          <div class="col-lg-6 text-left contentRightCol">
+          <div class="col-lg-2 text-left"></div>
+        </div>
+      </div>
+    </section>
+
+        <section id="webdevSkillsContentSecond" class="WD contentDiv contentDivContent">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 text-left"></div>
+          <div class="col-lg-8 text-left contentRightCol">
             <h3>What I do:</h3>
             <hr class="contenthr">
             <p style="font-size: 12px; font-weight: 700;"><em>(Hover over the icons!)</em></p>
@@ -449,6 +527,7 @@
                 </div>
             </div>
           </div>
+          <div class="col-lg-2 text-left"></div>
           <div class="contentPaddingDiv"></div>
         </div>
       </div>
@@ -461,7 +540,7 @@
             <img src="img/experience.png" width="37" class="contentTitleIcon"/><h2>Experience</h2>
           </div>
           <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-            <p class="text-right">Use cascading style sheets instead of inline styles. You'll thank yourself years later.</p>
+            <p class="text-right">Use cascading style sheets instead of inline styles. You'll thank yourself  later.</p>
           </div>
         </div>
       </div>
@@ -515,7 +594,133 @@
       </div>
     </section>
 
-    
+<!-- MODALS -->
+
+<div id="modalAMtvshows" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">TV Shows</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=aaOuUP3i_J4&t=7s" target="_blank">Expanse</a></h5>
+                <p>Can't wait to see the third season! Refuse to spoil myself by reading the books...</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=Qfgdlw1Z88I" target="_blank">Stargate</a></h5>
+                <p>I've watched SG1 and Atlantis ten times over! I liked Universe, and wish it wasn't cancelled right when it began to get good.</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=rbBX6aEzEz8" target="_blank">X-Files</a></h5>
+                <p>Love my conspiracy theories and secret government science fiction.</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=XgaWmIdxU_4" target="_blank">Battlestar Galactica 2003</a></h5>
+                <p>Extremely memorable, and the Pegasus was one of my favorite spaceships of all time. OST was one of the best in all of scifi. So say we all.</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=QuyjhM1vL9I" target="_blank">Star Trek TNG + DS9 + New Movies</a></h5>
+                <p>I'm one of the weirdos that enjoyed both classic 80s/90s Trek and the new movies, despite the thematic shifts!</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=NPRlHwwVIug" target="_blank">Firefly</a></h5>
+                <p>"Don't be sad because it's over, be glad because it happened." Firefly Season 1 - Serenity</p>
+            </li>
+            <li>
+                <h5>Black Mirror</h5>
+                <p>It's quite edgy, but it has some of the most creative ideas I've ever seen in fiction.</p>
+            </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="modalAMvideogames" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Video Games</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=0EnZEF8e71E" target="_blank">Borderlands Series</a></h5>
+                <p>Loved each one and their personalities (especially Tales from the Borderlands). Looking forward to the third installment!</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=KXApk1eqoC0" target="_blank">Mass Effect Series</a></h5>
+                <p>Best damn science fiction epic saga I have ever experienced! The second one was my favorite by far.</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=CvqYb4LNkB0" target="_blank">Deus Ex Series</a></h5>
+                <p>Conspiracy theories are always a subject I find fascinating. The original and Human Revolution are works of art. Unfortunately, it appears that new installments won't come in a while - what a shame.</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=-b5X69vREAg" target="_blank">Command and Conquer Series</a></h5>
+                <p>My first RTS games and probably going to be my last. I love each game in each series (except for the one we don't speak about). I'm basic and prefer GDI, sorry Nod fanboys.</p>
+            </li>
+            <li>
+                <h5><a class="lightBG" href="https://www.youtube.com/watch?v=4FAqM_yjAus" target="_blank">STALKER Series</a></h5>
+                <p>How can I not mention the only substantial and decent cultural export of my home country? The Zone Giveth, and the Zone Taketh Away.</p>
+            </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div id="modalAMbooks" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Books</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul>
+            <li>
+                <h5>The Sphere</h5>
+                <p>A god damn masterpiece. You can lump in most other Michael Crichton thrillers in here too (RIP).</p>
+            </li>
+            <li>
+                <h5>Canticle for Leibowitz</h5>
+                <p>Read this book in a day. Insightful, intriguing, a one-of-a-kind pageturner.</p>
+            </li>
+            <li>
+                <h5>Old Man's War</h5>
+                <p>Classic-styled military scifi along the lines of Starship Troopers.</p>
+            </li>
+            <li>
+                <h5>Roadside Picnic</h5>
+                <p>Not-traditional aliens are the best kinds of aliens. Really makes you think about our place in the universe (as does Sphere).</p>
+            </li>
+            <li>
+                <h5>I, Robot</h5>
+                <p>Asimov's short stories have always been a favorite of mine. Honestly, there's a lot more than I, Robot that I like.</p>
+            </li>
+            <li>
+                <h5>Neuromancer</h5>
+                <p>This book was one hell of a trip.</p>
+            </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+      </div>
+    </div>
+    </div>
+</div>
 
     3dModelIntro
 
