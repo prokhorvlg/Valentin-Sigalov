@@ -21,6 +21,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
 
+    <!--    jQuery: Magnific Popup   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
     <!--     Bootstrap Core     -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
@@ -71,7 +75,7 @@
         <div class="titleMobileContent2">
           <div class="titleMobileSidebarContainer">
             <div class="titleMobileSidebarNavItem">
-                <a href="#aboutme">About Me</a>
+                <a href="#aboutme" onclick="scrollToAM()">About Me</a>
             </div>
             <div class="titleMobileSidebarNavItem">
                 <hr class="titleMobilehr" style="border-color: #2bb5e9;">
@@ -86,13 +90,13 @@
                 <a href="#3dmodel" onclick="scrollTo3D()">3D Modeler</a>
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#" onclick="scrollTo3D()">Other Skills</a>
+                <a href="#" onclick="scrollToOS()">Other Skills</a>
             </div>
             <div class="titleMobileSidebarNavItem">
                 <hr class="titleMobilehr" style="border-color: #2bb5e9;">
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#">Contact Me</a>
+                <a href="#" onclick="scrollToCM()">Contact Me</a>
             </div>
         </div>
       </div>
@@ -139,13 +143,13 @@
       			<a href="#3dmodel" onclick="scrollTo3D()">3D Modeler</a>
       		</div>
       		<div class="titleSidebarNavItem navOtherSkills" id="navOtherSkills">
-      			<a href="#" onclick="scrollTo3D()">Other Skills</a>
+      			<a href="#" onclick="scrollToOS()">Other Skills</a>
       		</div>
       		<div class="titleSidebarNavItem" id="titleSidebarNavItemBar2">
       			<hr class="titlehr" style="width: 140px; border-color: #2bb5e9;">
       		</div>
       		<div class="titleSidebarNavItem navContactMe" id="navContactMe">
-      			<a href="#">Contact Me</a>
+      			<a href="#" onclick="scrollToCM()">Contact Me</a>
       		</div>
       		<div class="titleSidebarNavItem" id="titleSidebarNavItem9">
       			<a href="#">Back to Top</a>
@@ -244,11 +248,13 @@
         <img src="img/img_graphicdesign.png" width="405" />
     </section>
 
+    <!--    GRAPHIC DESIGN SKILLS    -->
+
     <section id="graphicDesignSkills" class="contentDiv contentDivTitle">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-          	<img src="img/skills.png" width="37" class="contentTitleIcon"/><h2>Skills</h2>
+          	<img src="img/icons/skills.svg" width="40" class="contentTitleIcon"/><h2>Skills</h2>
           </div>
           <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="text-right">Never, ever, stretch your text using transform tools.</p>
@@ -314,6 +320,47 @@
       </div>
     </section>
 
+    <!--    GRAPHIC DESIGN PORTFOLIO    -->
+
+    <section id="graphicDesignPortfolio" class="contentDiv contentDivTitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="img/icons/portfolio.svg" width="40" class="contentTitleIcon"/><h2>Portfolio</h2>
+          </div>
+          <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <p class="text-right">Contrast is incredibly important - it's the difference between a striking design and a murky mess.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphicDesignPortfolioContent" class="GD contentDiv contentDivContent portfolioDiv">
+      <div class="container portfolioContainer">
+        <div class="row">
+          <div class="col-lg-4" style="min-height: 300px;">
+            <a class="portfolio-box gradient-overlay-dark image-popup-no-margins" href="img/portfolio_images/GD/portfolio_GD_corporatelogos.png" target="_blank" style="background-image: url(img/portfolio_images/GD/portfolio_GD_corporatelogos.png); background-size: cover; height: 100%; width: 100%; background-position: 50% 50%;">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Fictional Logo Projects
+                  </div>
+                </div>
+              </div>
+            </a>    
+          </div>
+          <div class="col-lg-4">
+            Test
+          </div>
+          <div class="col-lg-4">
+            Test
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+
     <section id="graphicDesignExperience" class="GD contentDiv contentDivTitle">
       <div class="container">
         <div class="row">
@@ -378,7 +425,7 @@
       </div>
     </section>
 
-
+    -->
 
 
 
@@ -391,18 +438,22 @@
         </div>
     </div>
 
-    <section id="webDevIntro" class="WD contentDiv contentDivHeader">
+    <section id="webDevIntro" class="WD contentDivHeader">
         <img src="img/bgGrid.png" width="810" class="gridBG" />
         <div class="container">
             <div class="row">
-                <div>
+                <div style="width: 100%;">
                     <h2>Web Developer</h2>
                     <img src="img/barWD.png" width="586" class="barHeader" />
                     <img src="img/barWDmobile.png" width="222" class="barHeaderMobile" />
-                    <div class="contentDivHeaderLeftPanel">
+                    <div>
                         <p class="text-left"><em>How I merge my passion for design with logical challenge to create functional, beautiful, and interactive products for people to enjoy.</em></p>
-                        <p class="text-left">Ever since I discovered graphic design and all things related when I accidentally took a digital design class in the 11th grade, I've been fascinated by it.</p>
-                        <p class="text-left">Mostly self-taught, 4 years experience.</p>
+                        <div class="buttonSkip">
+                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Skills</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Portfolio</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Experience</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Coursework</a>
+                        </div>
                     </div>
                 </div>
 
@@ -418,7 +469,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-            <img src="img/skills.png" width="37" class="contentTitleIcon"/><h2>Skills</h2>
+            <img src="img/icons/skills.svg" width="40" class="contentTitleIcon"/><h2>Skills</h2>
           </div>
           <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <p class="text-right">Always err on the side of <em>not</em> scroll-hijacking.</p>
@@ -426,8 +477,6 @@
         </div>
       </div>
     </section>
-
-
 
     <section id="webdevSkillsContent" class="WD contentDiv contentDivContent">
       <div class="container">
@@ -496,7 +545,7 @@
       </div>
     </section>
 
-        <section id="webdevSkillsContentSecond" class="WD contentDiv contentDivContent">
+    <section id="webdevSkillsContentSecond" class="WD contentDiv contentDivContent">
       <div class="container">
         <div class="row">
           <div class="col-lg-2 text-left"></div>
@@ -532,6 +581,8 @@
         </div>
       </div>
     </section>
+
+    <!--
 
     <section id="webdevExperience" class="WD contentDiv contentDivTitle">
       <div class="container">
@@ -593,6 +644,8 @@
         <div class="contentPaddingDiv"></div>
       </div>
     </section>
+
+    -->
 
 <!-- MODALS -->
 
@@ -730,6 +783,21 @@
       AOS.init({
         disable: 'mobile'
       });
+
+        $(document).ready(function() {
+
+            $('.image-popup-no-margins').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: true
+                }
+            });
+
+        });
     </script>
 
 	</body>

@@ -311,3 +311,17 @@ function scrollToAM(){
   $(window).scrollTo('#aboutMeIntro', scrollAnimMilliseconds);
   checkHeight();
 }
+
+function scrollToOS(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#otherSkillsIntro', scrollAnimMilliseconds);
+  checkHeight();
+}
+
+function scrollToCM(){
+  scrollListener = false;
+  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
+  $(window).scrollTo('#contactMeIntro', scrollAnimMilliseconds);
+  checkHeight();
+}
