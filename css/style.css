@@ -98,7 +98,7 @@ hr {
 }
 
 .buttonSkip {
-  width: 60%;
+  width: 100%;
   min-width: 300px;
   padding-top: 15px !important;
 }
@@ -114,6 +114,8 @@ hr {
     max-width: 9000px;
   }
   .buttonSkip {
+    width: 60%;
+    min-width: 300px;
     margin: 0 auto;
   }
 }
