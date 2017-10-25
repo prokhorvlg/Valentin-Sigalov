@@ -1075,6 +1075,7 @@ hr {
 
 .portfolioGDImageContainer img {
   overflow: hidden;
+  background-color: #1b1f22;
 }
 
 .portfolioGDItem {
@@ -1109,6 +1110,7 @@ hr {
   border-color: #fff;
   transition: 0.2s ease-in-out;
   position: relative;
+  background-color: #1b1f22;
 }
 
 .portfolioGDHR {
@@ -1169,6 +1171,26 @@ hr {
 }
 .GDRow2 .portfolioGDText {
   margin-top: -180px;
+}
+
+@media (max-width: 768px) {
+  .GDRow1, .GDRow2 {
+    width: 98vw;
+    height: auto;
+  }
+  .GDRow1 .portfolioGDImageContainer, .GDRow2 .portfolioGDImageContainer {
+    width: 100%;
+    height: auto;
+  }
+  .GDRow1 img, .GDRow2 img {
+    width: 100%;
+    height: auto;
+  }
+  .GDRow1 .portfolioGDText, .GDRow2 .portfolioGDText {
+    margin-top: 0;
+    position: static;
+    opacity: 1;
+  }
 }
 
 /*
