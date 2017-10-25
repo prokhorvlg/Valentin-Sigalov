@@ -1071,6 +1071,7 @@ hr {
   background-color: #1b1f22;
   overflow: hidden;
   transition: 0.2s ease-in-out;
+  border-radius: 2px;
 }
 
 .portfolioGDImageContainer img {
@@ -1080,7 +1081,6 @@ hr {
 
 .portfolioGDItem {
   text-align: center;
-  border: 2px solid rgba(0,0,0, 0.1);
   border-radius: 2px;
   margin: 10px;
   background-color: #1b1f22;
@@ -1095,7 +1095,6 @@ hr {
   cursor: pointer;
   box-shadow: 0px 0px 0px 6px rgba(42, 181, 232, 0.5);
 
-  border-color: #2bb5e9;
   color: rgba(42, 181, 232, 1);
 }
 
@@ -1110,7 +1109,6 @@ hr {
   border-color: #fff;
   transition: 0.2s ease-in-out;
   position: relative;
-  background-color: #1b1f22;
 }
 
 .portfolioGDHR {
