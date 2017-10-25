@@ -965,6 +965,8 @@ hr {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 22px; } }
 
+/*
+
 .portfolioContainer{
   margin: 0;
   padding: 0;
@@ -973,3 +975,219 @@ hr {
 .portfolioDiv {
   padding-top: 0px !important;
 }
+
+*/
+
+
+
+.portfolioPadding {
+  height: 50px;
+}
+
+.portfolioHR {
+  width: auto;
+}
+
+.portfolioP {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.portfolioRow {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.portfolioImageContainer {
+  background-color: #1b1f22;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px rgba(0,0,0, 0.2) solid;
+  margin: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.portfolioImageContainer img {
+  width: 300px;
+  height: 200px;
+}
+
+.portfolioItem {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  border: 2px solid rgba(0,0,0, 0.1);
+  border-radius: 2px;
+  margin: 5px;
+  background-color: #fff;
+
+  box-shadow: 0px rgba(0,0,0,0), inset 0 0 0px 0 rgba(34, 187, 238, 0.2);
+
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.portfolioItem:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 6px rgba(0,0,0, 0.1), inset 0 0 10px 0 rgba(34, 187, 238, 0.2);
+
+  border-color: #2bb5e9;
+  color: #2bb5e9;
+}
+
+.portfolioItem:hover .portfolioImageContainer {
+  opacity: 0.9;
+  border-color: #2bb5e9;
+  transform: scale3d(0.9, 0.9, 1);
+}
+
+.portfolioItem hr {
+  transition: 0.2s ease-in-out;
+}
+
+.portfolioItem:hover hr {
+  border-color: #2bb5e9;
+}
+
+
+
+
+
+
+
+
+
+.portfolioGDImageContainer {
+  background-color: #1b1f22;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.portfolioGDImageContainer img {
+  overflow: hidden;
+}
+
+.portfolioGDItem {
+  text-align: center;
+  border: 2px solid rgba(0,0,0, 0.1);
+  border-radius: 2px;
+  margin: 10px;
+  background-color: #1b1f22;
+
+  box-shadow: 0px rgba(0,0,0,0);
+
+  transition: 0.2s ease-in-out;
+  height: 205px;
+}
+
+.portfolioGDItem:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 6px rgba(42, 181, 232, 0.5);
+
+  border-color: #2bb5e9;
+  color: rgba(42, 181, 232, 1);
+}
+
+.portfolioGDItem:hover .portfolioGDImageContainer {
+  opacity: 0.1;
+  transform: scale3d(0.6, 0.6, 1);
+}
+
+.portfolioGDText {
+  opacity: 0;
+  color: #fff;
+  border-color: #fff;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.portfolioGDHR {
+  width: 200px;
+}
+
+.portfolioGDItem:hover .portfolioGDText {
+  opacity: 1;
+}
+
+
+
+.GDRow1 {
+  width: 300px;
+  height: 205px;
+}
+.GDRow1 .portfolioGDImageContainer {
+  width: 300px;
+  height: 200px;
+}
+.GDRow1 img {
+  width: 300px;
+  height: 200px;
+}
+.GDRow1 .portfolioGDText {
+  margin-top: -130px;
+}
+@media (max-width: 922px) {
+  .GDRow1 {
+    width: 466px;
+    height: 305px;
+  }
+  .GDRow1 .portfolioGDImageContainer {
+    width: 450px;
+    height: 300px;
+  }
+  .GDRow1 img {
+    width: 450px;
+    height: 300px;
+  }
+  .GDRow1 .portfolioGDText {
+    margin-top: -180px;
+  }
+}
+
+
+.GDRow2 {
+  width: 466px;
+  height: 305px;
+}
+.GDRow2 .portfolioGDImageContainer {
+  width: 450px;
+  height: 300px;
+}
+.GDRow2 img {
+  width: 450px;
+  height: 300px;
+}
+.GDRow2 .portfolioGDText {
+  margin-top: -180px;
+}
+
+/*
+@keyframes kenburns_GD_1 {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.4, 0.4, 1) translate3d(-2200px, -1600px, 0px);
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+        transform: scale3d(0.2, 0.2, 1) translate3d(-7350px, -4480px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(0.2, 0.2, 1) translate3d(-7350px, -4480px, 0px);
+        opacity: 0;
+    }
+}
+*/
