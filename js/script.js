@@ -277,51 +277,9 @@ function scrolledUp(){
 
 }
 
-function scrollToGD(){
+function scrollToElement( targetElement ){
   scrollListener = false;
   setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#graphicDesignIntro', scrollAnimMilliseconds);
-  checkHeight();
-}
-
-function scrollToWD(){
-  scrollListener = false;
-  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#webDevIntro', scrollAnimMilliseconds);
-  checkHeight();
-}
-
-function scrollToWDExp(){
-  scrollListener = false;
-  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#webdevExperience', scrollAnimMilliseconds);
-  checkHeight();
-}
-
-function scrollTo3D(){
-  scrollListener = false;
-  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#3dModelIntro', scrollAnimMilliseconds);
-  checkHeight();
-}
-
-function scrollToAM(){
-  scrollListener = false;
-  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#aboutMeIntro', scrollAnimMilliseconds);
-  checkHeight();
-}
-
-function scrollToOS(){
-  scrollListener = false;
-  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#otherSkillsIntro', scrollAnimMilliseconds);
-  checkHeight();
-}
-
-function scrollToCM(){
-  scrollListener = false;
-  setTimeout( function(){ scrollListener = true; checkHeight(); }, 300);
-  $(window).scrollTo('#contactMeIntro', scrollAnimMilliseconds);
+  $(window).scrollTo('#' + targetElement, scrollAnimMilliseconds);
   checkHeight();
 }

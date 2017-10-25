@@ -8,6 +8,8 @@
     <meta name="description" content="A personal site.">
     <meta name="author" content="Valentin Sigalov">
 
+    <meta name="theme-color" content="#2bb5e9" />
+
     <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->
 
     <title>Valentin Sigalov</title>
@@ -75,28 +77,28 @@
         <div class="titleMobileContent2">
           <div class="titleMobileSidebarContainer">
             <div class="titleMobileSidebarNavItem">
-                <a href="#aboutme" onclick="scrollToAM()">About Me</a>
+                <a href="#aboutme" onclick="scrollToElement('aboutMeIntro')">About Me</a>
             </div>
             <div class="titleMobileSidebarNavItem">
                 <hr class="titleMobilehr" style="border-color: #2bb5e9;">
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#graphicdesign" onclick="scrollToGD()">Graphic Designer</a>
+                <a href="#graphicdesign" onclick="scrollToElement('graphicDesignIntro')">Graphic Designer</a>
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#webdev" onclick="scrollToWD()">Web Developer</a>
+                <a href="#webdev" onclick="scrollToElement('webDevIntro')">Web Developer</a>
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#3dmodel" onclick="scrollTo3D()">3D Modeler</a>
+                <a href="#3dmodel" onclick="scrollToElement('3dModelIntro')">3D Modeler</a>
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#" onclick="scrollToOS()">Other Skills</a>
+                <a href="#" onclick="scrollToElement('otherSkillsIntro')">Other Skills</a>
             </div>
             <div class="titleMobileSidebarNavItem">
                 <hr class="titleMobilehr" style="border-color: #2bb5e9;">
             </div>
             <div class="titleMobileSidebarNavItem">
-                <a href="#" onclick="scrollToCM()">Contact Me</a>
+                <a href="#" onclick="scrollToElement('contactMeIntro')">Contact Me</a>
             </div>
         </div>
       </div>
@@ -128,28 +130,28 @@
       <div id="titleContainerContent2">
       	<div id="titleSidebarContainer">
             <div class="titleSidebarNavItem navAboutMe" id="navAboutMe">
-                <a href="#aboutme" onclick="scrollToAM()" >About Me</a>
+                <a href="#aboutme" onclick="scrollToElement('aboutMeIntro')" >About Me</a>
             </div>
             <div class="titleSidebarNavItem" id="titleSidebarNavItemBar1">
                 <hr class="titlehr" style="width: 140px; border-color: #2bb5e9;">
             </div>
       		<div class="titleSidebarNavItem navGraphicDesign" id="navGraphicDesign">
-      			<a href="#graphicdesign" onclick="scrollToGD()">Graphic Designer</a>
+      			<a href="#graphicdesign" onclick="scrollToElement('graphicDesignIntro')">Graphic Designer</a>
       		</div>
       		<div class="titleSidebarNavItem navWebDev" id="navWebDev">
-      			<a href="#webdev" onclick="scrollToWD()">Web Developer</a>
+      			<a href="#webdev" onclick="scrollToElement('webDevIntro')">Web Developer</a>
       		</div>
       		<div class="titleSidebarNavItem nav3DModeler" id="nav3DModeler">
-      			<a href="#3dmodel" onclick="scrollTo3D()">3D Modeler</a>
+      			<a href="#3dmodel" onclick="scrollToElement('3dModelIntro')">3D Modeler</a>
       		</div>
       		<div class="titleSidebarNavItem navOtherSkills" id="navOtherSkills">
-      			<a href="#" onclick="scrollToOS()">Other Skills</a>
+      			<a href="#" onclick="scrollToElement('otherSkillsIntro')">Other Skills</a>
       		</div>
       		<div class="titleSidebarNavItem" id="titleSidebarNavItemBar2">
       			<hr class="titlehr" style="width: 140px; border-color: #2bb5e9;">
       		</div>
       		<div class="titleSidebarNavItem navContactMe" id="navContactMe">
-      			<a href="#" onclick="scrollToCM()">Contact Me</a>
+      			<a href="#" onclick="scrollToElement('contactMeIntro')">Contact Me</a>
       		</div>
       		<div class="titleSidebarNavItem" id="titleSidebarNavItem9">
       			<a href="#">Back to Top</a>
@@ -157,15 +159,15 @@
       	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image1">
       		<img src="img/img_graphicdesign.png" class="title2Image" width="405" />
-      		<div class="title2desc" id="title2descGD" onclick="scrollToGD()"><h2>GRAPHIC DESIGNER</h2></div>
+      		<div class="title2desc" id="title2descGD" onclick="scrollToElement('graphicDesignIntro')"><h2>GRAPHIC DESIGNER</h2></div>
       	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image2">
       		<img src="img/img_webdev.png" class="title2Image" width="405" />
-      		<div class="title2desc" id="title2descWD" onclick="scrollToWD()"><h2>WEB DEVELOPER</h2></div>
+      		<div class="title2desc" id="title2descWD" onclick="scrollToElement('webDevIntro')"><h2>WEB DEVELOPER</h2></div>
       	</div>
       	<div class="titleContainerContent2Image" id="titleContainerContent2Image3">
       		<img src="img/img_3dmodeler.png" class="title2Image" width="405" />
-      		<div class="title2desc" id="title2desc3D" onclick="scrollTo3D()"><h2>3D MODELER</h2></div>
+      		<div class="title2desc" id="title2desc3D" onclick="scrollToElement('3dModelIntro')"><h2>3D MODELER</h2></div>
       	</div>
       </div>
       <div id="titleContainerContent3">
@@ -193,7 +195,7 @@
             <h3>Hey there!</h3>
             <hr class="contenthr">
             <p>I'm a 20-year-old <strong>Computer Science</strong> student studying at Drexel University. I've lived my entire life in Philadelphia after being brought to the United States as a 10-month-old from Ukraine, and I've loved every moment of life in this city. </p>
-            <p>Aside from - obviously - being thankful for everything my dad has done for me, I'm probably most thankful for the fact that my professional aspirations and personal passions are perfectly aligned. I'm incredibly passionate about all things design and programming. I don't have any spare time, because when I'm not working, I'm <a class="lightBG" href="#aboutme" onclick="scrollToGD()">sketching a logo</a>, <a class="lightBG" href="#webdev" onclick="scrollToWD()">coding a website</a>, <a class="lightBG" href="#3dmodel" onclick="scrollTo3D()">designing a starship</a>, or desperately trying to learn to draw characters, because I love it!</p>
+            <p>Aside from - obviously - being thankful for everything my dad has done for me, I'm probably most thankful for the fact that my professional aspirations and personal passions are perfectly aligned. I'm incredibly passionate about all things design and programming. I don't have any spare time, because when I'm not working, I'm <a class="lightBG" href="#aboutme" onclick="scrollToElement('graphicDesignIntro')">sketching a logo</a>, <a class="lightBG" href="#webdev" onclick="scrollToElement('webDevIntro')">coding a website</a>, <a class="lightBG" href="#3dmodel" onclick="scrollToElement('3dModelIntro')">designing a starship</a>, or desperately trying to learn to draw characters, because I love it!</p>
             <p>Well, <em>okay</em>, I have other hobbies. I'm a scifi nerd. I live and breath everything science fiction: stories, worldbuilding, video games, and all. In fact, the main reason I picked up design and code was to create and show off my own fictional settings!</p>
           </div>
           <div class="col-lg-6 text-left contentRightCol">
@@ -225,7 +227,7 @@
 	    </div>
     </div>
 
-    <section id="graphicDesignIntro" class="GD contentDiv contentDivHeader">
+    <section id="graphicDesignIntro" class="GD contentDiv contentDivHeader contentDivHeaderStack">
     	<img src="img/bgGrid.png" width="810" class="gridBG" />
     	<div class="container">
 	        <div class="row">
@@ -368,7 +370,7 @@
           </div>
           <div class="portfolioGDItem GDRow1">
 
-                        <div class="portfolioGDImageContainer">
+            <div class="portfolioGDImageContainer">
                 <img src="img/portfolio_images/GD/portfolio_GD_1_2.png" class="GD_2" />
             </div>
             <div class="portfolioGDText">
@@ -410,6 +412,81 @@
           </div>
         </div>
 
+        <hr class="portfolioSectionHR">
+
+        <div class="row portfolioRow">
+          <div class="portfolioGDItem GDRow1">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/GD/portfolio_GD_info_1.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Cybernetic Lobotomy</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Scifi Infographics</em></p>
+            </div>
+
+          </div>
+          <div class="portfolioGDItem GDRow1">
+
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/GD/portfolio_GD_info_2.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>They Came From Space</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Scifi Infographics</em></p>
+            </div>
+
+          </div>
+          <div class="portfolioGDItem GDRow1">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/GD/portfolio_GD_info_3.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Universal Translators</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Scifi Infographics</em></p>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="row portfolioRow">
+          <div class="portfolioGDItem GDRow2">
+
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/GD/portfolio_GD_map_1.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Planet Mani</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Map Projects</em></p>
+            </div>
+
+          </div>
+          <a class="image-popup-no-margins" href="img/portfolio_images/GD/portfolio_GD_corporatelogos.png" target="_blank" style="text-decoration: none;">
+                <div class="portfolioGDItem GDRow2">
+
+                <div class="portfolioGDImageContainer">
+                    <img src="img/portfolio_images/GD/portfolio_GD_gun_1.png" />
+                </div>
+                <div class="portfolioGDText">
+                    <h5>Type 58-smg</h5>
+                    <hr class="portfolioGDHR">
+                    <p><em>Scifi Weapons Concepts</em></p>
+                </div>
+
+              </div>
+          </a>
+        </div>
+
+        <!--
+
         <div class="row portfolioRow">
           <div class="portfolioItem">
 
@@ -435,15 +512,15 @@
             </div>
 
           </div>
-        </div>
+        </div>-->
 
         <div class="portfolioPadding"></div>
 
       </div>
     </section>
 
-                <!--
-            <a class="portfolio-box gradient-overlay-dark image-popup-no-margins" href="img/portfolio_images/GD/portfolio_GD_corporatelogos.png" target="_blank" style="background-image: url(img/portfolio_images/GD/portfolio_GD_corporatelogos.png); background-size: cover; height: 100%; width: 100%; background-position: 50% 50%;">
+                
+            <!--<a class="portfolio-box gradient-overlay-dark image-popup-no-margins" href="img/portfolio_images/GD/portfolio_GD_corporatelogos.png" target="_blank" style="background-image: url(img/portfolio_images/GD/portfolio_GD_corporatelogos.png); background-size: cover; height: 100%; width: 100%; background-position: 50% 50%;">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-name">
@@ -532,7 +609,7 @@
         </div>
     </div>
 
-    <section id="webDevIntro" class="WD contentDivHeader">
+    <section id="webDevIntro" class="WD contentDivHeader contentDivHeaderStack">
         <img src="img/bgGrid.png" width="810" class="gridBG" />
         <div class="container">
             <div class="row">
@@ -543,8 +620,8 @@
                     <div>
                         <p class="text-left"><em>How I merge my passion for design with logical challenge to create functional, beautiful, and interactive products for people to enjoy.</em></p>
                         <div class="buttonSkip">
-                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Skills</a>&nbsp;&nbsp;
-                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Portfolio</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevExperience" onclick="scrollToElement('webdevSkills')">Skills</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevExperience" onclick="scrollToElement('webdevPortfolio')">Portfolio</a>&nbsp;&nbsp;
                             <a class="btn btnSkip" href="#webdevExperience" onclick="">Experience</a>&nbsp;&nbsp;
                             <a class="btn btnSkip" href="#webdevExperience" onclick="">Coursework</a>
                         </div>
