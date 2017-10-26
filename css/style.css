@@ -722,10 +722,16 @@ hr {
   letter-spacing: 0.35em;
   font-weight: 300;
 }
+.contentDivHeader h2.modelTitle {
+    margin-left: 15px;
+  }
 @media (max-width: 1400px) {
   .contentDivHeader h2 {
     letter-spacing: 0.2em;
     margin-left: 100px;
+  }
+  .contentDivHeader h2.modelTitle {
+    margin-left: 115px;
   }
 }
 @media (max-width: 900px) {
@@ -733,6 +739,9 @@ hr {
     font-size: 24px;
     letter-spacing: 0.2em;
     margin-left: 100px;
+  }
+  .contentDivHeader h2.modelTitle {
+    margin-left: 115px;
   }
   .contentDivHeader p {
     text-align: justify !important;
@@ -1250,3 +1259,36 @@ hr {
     }
 }
 */
+
+.backToTopMobile {
+  display: none;
+
+  height: 60px;
+  width: 100vw;
+  bottom: 0;
+
+  position: fixed;
+  z-index: 10;
+
+  background-color: #161616;
+  border-top: 2px solid white;
+
+  text-align: center;
+}
+@media (max-width: 1400px) {
+  .backToTopMobile {
+    display: block;
+  }
+}
+
+.backToTopMobile .titleSidebarNavItem{
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.backToTopMobile .titleSidebarNavItem a {
+  width: 60vw;
+  
+}
+
+    

@@ -168,7 +168,7 @@ function scrolledDown(){
   titleName.style.fontWeight = "400";
 
   titlehr.style.width = widthOfSidebar + "px";
-  titlehr.style.marginTop = "-20px";
+  titlehr.style.marginTop = "0px";
   scrollArrow.style.opacity = "0";
   scrollArrow2.style.opacity = "0";
   scrollDown.style.opacity = "0";
