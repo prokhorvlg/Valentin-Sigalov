@@ -134,7 +134,10 @@ function scrolledDown(){
   var titleName = document.getElementById("titleName");
   var titlehr = document.getElementById("titlehr");
   var scrollArrow = document.getElementById("scrollArrow");
+  var scrollArrow2 = document.getElementById("scrollArrow2");
+  var scrollDown = document.getElementById("scrollDown");
   var titleContainerContent2 = document.getElementById("titleContainerContent2");
+  var titleContainerContent3 = document.getElementById("titleContainerContent3");
 
   var titleSidebarContainer = document.getElementById("titleSidebarContainer");
 
@@ -167,6 +170,12 @@ function scrolledDown(){
   titlehr.style.width = widthOfSidebar + "px";
   titlehr.style.marginTop = "-20px";
   scrollArrow.style.opacity = "0";
+  scrollArrow2.style.opacity = "0";
+  scrollDown.style.opacity = "0";
+
+  scrollArrow.style.animation = "none";
+  scrollArrow2.style.animation = "none";
+  scrollDown.style.animation = "none";
 
   titleContainerContent1Desc.style.opacity = "0";
   titleContainerContent1Desc.style.height = "0";
@@ -212,6 +221,8 @@ function scrolledUp(){
   var titleName = document.getElementById("titleName");
   var titlehr = document.getElementById("titlehr");
   var scrollArrow = document.getElementById("scrollArrow");
+  var scrollArrow2 = document.getElementById("scrollArrow2");
+  var scrollDown = document.getElementById("scrollDown");
   var titleContainerContent2 = document.getElementById("titleContainerContent2");
 
   var titleSidebarContainer = document.getElementById("titleSidebarContainer");
@@ -253,6 +264,12 @@ function scrolledUp(){
     titlehr.style.width = "300px";
     titlehr.style.marginTop = "16px";
     scrollArrow.style.opacity = "1";
+    scrollArrow2.style.opacity = "1";
+    scrollDown.style.opacity = "1";
+
+    scrollArrow.style.animation = "bounceArrow 2s infinite";
+    scrollArrow2.style.animation = "bounceArrow 2s infinite";
+    scrollDown.style.animation = "bounceText 2s infinite";
 
     titleSidebarContainer.style.display = "none";
 

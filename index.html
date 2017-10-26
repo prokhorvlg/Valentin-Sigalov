@@ -123,13 +123,14 @@
 			<h1 class="titleName" id="titleName">VALENTIN<span style="color: #2bb5e9; font-weight: 400;">SIGALOV</span></h1>
 		</div>
 		<div class="titleContainerContent1Flex" id="titleContainerContent1Scroll">
-			<img src="img/scroll_arrow.png" class="scrollArrow" id="scrollArrow"/>
+			
 			<hr class="titlehr" id="titlehr">
 		</div>
         <div class="titleContainerContent1Flex" id="titleContainerContent1Desc">
             <p><em>Drexel University, Computer Science student.</em><br>
             <em>...also a huge scifi nerd.</em></p>
-        </div>
+            <div class="scrollArrowContainer"><img src="img/scroll_arrow.png" class="scrollArrow" id="scrollArrow"/><div class="scrollDown" id="scrollDown"><h2>&nbsp;&nbsp;&nbsp;SCROLL DOWN&nbsp;&nbsp;&nbsp;</h2></div><img src="img/scroll_arrow.png" class="scrollArrow" id="scrollArrow2"/></div>
+        </div>  
       </div>
       <div id="titleContainerContent2">
       	<div id="titleSidebarContainer">
@@ -359,6 +360,8 @@
         </div>
     </div>
 
+    <!--    GRAPHIC DESIGN    -->
+
     <div class="GD contentDivHeaderImage">
     	<div class="contentDivHeaderImageContainer">
 	    	<img src="img/img_graphicdesign.png" width="405" />
@@ -375,8 +378,12 @@
                     <img src="img/barGDmobile.png" width="222" class="barHeaderMobile" />
 		            <div class="contentDivHeaderLeftPanel">
 			            <p class="text-left"><em>How I express my creativity in the language of clean layouts and futuristic logos.</em></p>
-			            <p class="text-left">Ever since I discovered graphic design and all things related when I accidentally took a digital design class in the 11th grade, I've been fascinated by it.</p>
-			            <p class="text-left">Mostly self-taught, 4 years experience.</p>
+			            <div class="buttonSkip">
+                            <a class="btn btnSkip" href="#graphicDesignSkills" onclick="scrollToElement('graphicDesignSkills')">Skills</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#graphicDesignPortfolio" onclick="scrollToElement('graphicDesignPortfolio')">Portfolio</a>&nbsp;&nbsp;
+                            <!--<a class="btn btnSkip" href="#graphicDesignExperience" onclick="">Experience</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#graphicDesignCoursework" onclick="">Coursework</a>-->
+                        </div>
                     </div>
 	        	</div>
 
@@ -482,6 +489,7 @@
 
         <div class="row portfolioRow">
           <div class="portfolioGDItem GDRow1">
+            <a class="image-popup-no-margins" href="img/portfolio_images/GD/full/Bendoo.png" target="_blank" style="text-decoration: none;">
 
             <div class="portfolioGDImageContainer">
                 <img src="img/portfolio_images/GD/portfolio_GD_1_1.png" class="GD_1" />
@@ -491,9 +499,11 @@
                 <hr class="portfolioGDHR">
                 <p><em>Futuristic Logo Concepts</em></p>
             </div>
+        </a>
 
           </div>
           <div class="portfolioGDItem GDRow1">
+            <a class="image-popup-no-margins" href="img/portfolio_images/GD/full/Miller-Hacket.png" target="_blank" style="text-decoration: none;">
 
 
             <div class="portfolioGDImageContainer">
@@ -504,9 +514,11 @@
                 <hr class="portfolioGDHR">
                 <p><em>Futuristic Logo Concepts</em></p>
             </div>
+        </a>
 
           </div>
           <div class="portfolioGDItem GDRow1">
+            <a class="image-popup-no-margins" href="img/portfolio_images/GD/full/Aakaash.png" target="_blank" style="text-decoration: none;">
 
             <div class="portfolioGDImageContainer">
                 <img src="img/portfolio_images/GD/portfolio_GD_1_2.png" class="GD_2" />
@@ -516,6 +528,7 @@
                 <hr class="portfolioGDHR">
                 <p><em>Futuristic Logo Concepts</em></p>
             </div>
+        </a>
 
 
           </div>
@@ -524,6 +537,7 @@
 
         <div class="row portfolioRow">
           <div class="portfolioGDItem GDRow2">
+            <a class="image-popup-no-margins" href="img/portfolio_images/GD/full/CAUCorp.png" target="_blank" style="text-decoration: none;">
 
 
             <div class="portfolioGDImageContainer">
@@ -534,9 +548,11 @@
                 <hr class="portfolioGDHR">
                 <p><em>Futuristic Logo Concepts</em></p>
             </div>
+        </a>
 
           </div>
           <div class="portfolioGDItem GDRow2">
+            <a class="image-popup-no-margins" href="img/portfolio_images/GD/full/ExxedaMekani.png" target="_blank" style="text-decoration: none;">
 
             <div class="portfolioGDImageContainer">
                 <img src="img/portfolio_images/GD/portfolio_GD_1_5.png" class="GD_5" />
@@ -546,6 +562,7 @@
                 <hr class="portfolioGDHR">
                 <p><em>Futuristic Logo Concepts</em></p>
             </div>
+        </a>
 
           </div>
         </div>
@@ -623,50 +640,10 @@
           
         </div>
 
-        <!--
-
-        <div class="row portfolioRow">
-          <div class="portfolioItem">
-
-            <div class="portfolioImageContainer">
-                <img src="img/portfolio_images/GD/portfolio_GD_1_1.png" class="GD_1" />
-            </div>
-            <h5>Science Fiction Maps</h5>
-            <div class="portfolioP">
-                <hr class="portfolioHR">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim auctor urna sit amet ultrices. Proin non eleifend nisi. Fusce gravida, sem eu porta commodo, velit lacus tincidunt orci, eu mattis felis arcu a lectus.</p>
-            </div>
-
-          </div>
-          <div class="portfolioItem">
-
-            <div class="portfolioImageContainer">
-                <img src="img/portfolio_images/GD/portfolio_GD_1_1.png" class="GD_1" />
-            </div>
-            <h5>Conceptual Infographics</h5>
-            <div class="portfolioP">
-                <hr class="portfolioHR">
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim auctor urna sit amet ultrices. Proin non eleifend nisi. Fusce gravida, sem eu porta commodo, velit lacus tincidunt orci, eu mattis felis arcu a lectus.</p>
-            </div>
-
-          </div>
-        </div>-->
-
         <div class="portfolioPadding"></div>
 
       </div>
     </section>
-
-                
-            <!--<a class="portfolio-box gradient-overlay-dark image-popup-no-margins" href="img/portfolio_images/GD/portfolio_GD_corporatelogos.png" target="_blank" style="background-image: url(img/portfolio_images/GD/portfolio_GD_corporatelogos.png); background-size: cover; height: 100%; width: 100%; background-position: 50% 50%;">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-name">
-                    Fictional Logo Projects
-                  </div>
-                </div>
-              </div>
-            </a> -->
 
     <!--
 
@@ -736,10 +713,7 @@
 
     -->
 
-
-
-
-    <!--    WEB DEV SECTION     -->
+    <!--    WEB DEV     -->
 
     <div class="WD contentDivHeaderImage">
         <div class="contentDivHeaderImageContainer">
@@ -758,10 +732,10 @@
                     <div>
                         <p class="text-left"><em>How I merge my passion for design with logical challenge to create functional, beautiful, and interactive products for people to enjoy.</em></p>
                         <div class="buttonSkip">
-                            <a class="btn btnSkip" href="#webdevExperience" onclick="scrollToElement('webdevSkills')">Skills</a>&nbsp;&nbsp;
-                            <a class="btn btnSkip" href="#webdevExperience" onclick="scrollToElement('webdevPortfolio')">Portfolio</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevSkills" onclick="scrollToElement('webdevSkills')">Skills</a>&nbsp;&nbsp;
+                            <!--<a class="btn btnSkip" href="#webdevPortfolio" onclick="scrollToElement('webdevPortfolio')">Portfolio</a>&nbsp;&nbsp;
                             <a class="btn btnSkip" href="#webdevExperience" onclick="">Experience</a>&nbsp;&nbsp;
-                            <a class="btn btnSkip" href="#webdevExperience" onclick="">Coursework</a>
+                            <a class="btn btnSkip" href="#webdevCoursework" onclick="">Coursework</a>-->
                         </div>
                     </div>
                 </div>
@@ -773,6 +747,8 @@
     <section id="webdevMobileImage" class="WD contentDiv contentDivMobileImage">
         <img src="img/img_webdev.png" width="405" />
     </section>
+
+    <!--    WEB DEV SKILLS    -->
 
     <section id="webdevSkills" class="WD contentDiv contentDivTitle">
       <div class="container">
@@ -850,11 +826,12 @@
             </ul>
           </div>
           <div class="col-lg-2 text-left"></div>
+          <div class="contentPaddingDiv"></div>
         </div>
       </div>
     </section>
 
-    <section id="webdevSkillsContentSecond" class="WD contentDiv contentDivContent">
+    <!--<section id="webdevSkillsContentSecond" class="WD contentDiv contentDivContent">
       <div class="container">
         <div class="row">
           <div class="col-lg-2 text-left"></div>
@@ -889,9 +866,9 @@
           <div class="contentPaddingDiv"></div>
         </div>
       </div>
-    </section>
+    </section>-->
 
-        <section id="graphicDesignPortfolioContent" class="GD contentDiv contentDivContent portfolioDiv">
+    <!-- <section id="graphicDesignPortfolioContent" class="GD contentDiv contentDivContent portfolioDiv">
       <div class="container portfolioContainer">
 
         <div class="portfolioPadding"></div>
@@ -967,7 +944,7 @@
         <div class="portfolioPadding"></div>
 
       </div>
-    </section>
+    </section> -->
 
     <!--
 
@@ -1036,7 +1013,216 @@
 
 
 
-    3dModelIntro
+    <!--    3D MODEL     -->
+
+    <div class="3D contentDivHeaderImage">
+        <div class="contentDivHeaderImageContainer">
+            <img src="img/img_3dmodeler.png" width="405" />
+        </div>
+    </div>
+
+    <section id="3dModelIntro" class="3D contentDivHeader contentDivHeaderStack">
+        <img src="img/bgGrid.png" width="810" class="gridBG" />
+        <div class="container">
+            <div class="row">
+                <div style="width: 100%;">
+                    <h2>3D MODELER</h2>
+                    <img src="img/barWD.png" width="586" class="barHeader" />
+                    <img src="img/barWDmobile.png" width="222" class="barHeaderMobile" />
+                    <div>
+                        <p class="text-left"><em>How I show off my geeky love of scifi by crafting futuristic designs for people like me to admire, examine, and discuss.</em></p>
+                        <div class="buttonSkip">
+                            <a class="btn btnSkip" href="#3dModelSkills" onclick="scrollToElement('3dModelSkills')">Skills</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#3dModelPortfolio" onclick="scrollToElement('3dModelPortfolio')">Portfolio</a>&nbsp;&nbsp;
+                            <!--<a class="btn btnSkip" href="#webdevExperience" onclick="">Experience</a>&nbsp;&nbsp;
+                            <a class="btn btnSkip" href="#webdevCoursework" onclick="">Coursework</a>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      </div>
+    </section>
+
+    <section id="3dModelMobileImage" class="3D contentDiv contentDivMobileImage">
+        <img src="img/img_webdev.png" width="405" />
+    </section>
+
+    <!--    3D MODEL SKILLS    -->
+
+    <section id="3dModelSkills" class="3D contentDiv contentDivTitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="img/icons/skills.svg" width="40" class="contentTitleIcon"/><h2>Skills</h2>
+          </div>
+          <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <p class="text-right">Start with simple objects, then work your way up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="3dModelSkillsContent" class="3D contentDiv contentDivContent">
+      <div class="container">
+        <div class="row">
+          <div class="contentPaddingDiv"></div>
+          <div class="col-lg-2 text-left"></div>
+          <div class="col-lg-8 text-left">
+            <h3>What I use:</h3>
+            <hr class="contenthr">
+            <ul>
+                <li>
+                    <p><img src="img/program_logos/3d/blender.ico" width="20" class="miniAppImage"/><span style="color: #fa861a; font-weight: 700;">Blender 3D</span></p>
+                    <p>To 3d model, I stick to an amazing, ultra-popular open source program that is capable of just about everything - from animation, to rigging, to materials, to rendering... and probably a couple hundred other things.</p>
+                    <p>If anyone wants to try creating models, I highly recommend downloading <a class="lightBG" href="https://www.blender.org/" target="_blank">Blender</a> and giving a few tutorials a go!</p>
+                    <ul>
+                        <li><p><span style="font-weight: 700;">◇&nbsp;&nbsp;Cycles Render Engine</span></p></li>
+                    </ul>
+                </li>
+                <!--<hr class="contenthr">-->                
+            </ul>
+          </div>
+          <div class="col-lg-2 text-left"></div>
+          <div class="contentPaddingDiv"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--    3D MODEL PORTFOLIO    -->
+
+    <section id="3dModelPortfolio" class="3D contentDiv contentDivTitle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-left" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <img src="img/icons/portfolio.svg" width="40" class="contentTitleIcon"/><h2>Portfolio</h2>
+          </div>
+          <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <p class="text-right">Scale is dictated by detail, which is incidentally the most time-consuming part of a model.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="3dModelPortfolioContent" class="3D contentDiv contentDivContent portfolioDiv">
+      <div class="container portfolioContainer">
+
+        <div class="portfolioPadding"></div>
+
+        <div class="row portfolioRow">
+          <div class="portfolioGDItem GDRow2">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/yamada.png" target="_blank" style="text-decoration: none;">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_yamada.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Imoh.Konicek Yamada SMG</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Futuristic Firearms Concepts</em></p>
+            </div>
+        </a>
+
+          </div>
+          <div class="portfolioGDItem GDRow2">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/sanzuwu.png" target="_blank" style="text-decoration: none;">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_sanzuwu.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Kongxiang Sanzuwu SMG</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Futuristic Firearms Concepts</em></p>
+            </div>
+        </a>
+
+          </div>
+        </div>
+
+        <div class="row portfolioRow">
+          <div class="portfolioGDItem GDRow1">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/hannegan.png" target="_blank" style="text-decoration: none;">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_hannegan.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>TAC Hannegan</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Starship Concepts</em></p>
+            </div>
+        </a>
+
+          </div>
+          <div class="portfolioGDItem GDRow1">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/temple.png" target="_blank" style="text-decoration: none;">
+
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_temple.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Temple at the Edge of All Things</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Weird Architecture</em></p>
+            </div>
+        </a>
+
+          </div>
+          <div class="portfolioGDItem GDRow1">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/brennlynn.png" target="_blank" style="text-decoration: none;">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_brennlynn.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>Battleship Brennlynn</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Starship Concepts</em></p>
+            </div>
+        </a>
+
+          </div>
+        </div>
+
+
+        <div class="row portfolioRow">
+          <div class="portfolioGDItem GDRow2">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/boring.png" target="_blank" style="text-decoration: none;">
+
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_boring.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>The Boring Rocket</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Starship Concepts</em></p>
+            </div>
+        </a>
+
+          </div>
+          <div class="portfolioGDItem GDRow2">
+            <a class="image-popup-no-margins" href="img/portfolio_images/3D/full/nedry.png" target="_blank" style="text-decoration: none;">
+
+            <div class="portfolioGDImageContainer">
+                <img src="img/portfolio_images/3D/portfolio_3D_nedry.png" />
+            </div>
+            <div class="portfolioGDText">
+                <h5>BOS Nedry</h5>
+                <hr class="portfolioGDHR">
+                <p><em>Starship Concepts</em></p>
+            </div>
+        </a>
+
+          </div>
+        </div>
+
+        <div class="portfolioPadding"></div>
+
+      </div>
+    </section>
 
 	<script src="js/script.js"></script>
 
