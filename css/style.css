@@ -1273,17 +1273,18 @@ hr {
 .backToTopMobile {
   display: none;
 
-  height: 60px;
+  height: 0px;
   width: 100%;
-  bottom: 0;
+  top: 0;
 
   position: fixed;
   z-index: 10;
 
   background-color: #161616;
-  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 
   text-align: center;
+  transition: 0.2s ease-in-out;
 }
 @media (max-width: 1400px ) {
   .backToTopMobile {
@@ -1301,4 +1302,17 @@ hr {
   
 }
 
-    
+#backToTopMobileInner {
+  transition: .2s ease-in-out;
+  margin-top: -100px;
+}
+
+.backToTopCarat {
+  font-weight: 700; 
+  font-size:24px; 
+  line-height:18px;
+  display: inline-block;
+
+  position: relative;
+  top: 8px;
+}

@@ -40,8 +40,25 @@ var scrolledLock = false;
 var scrollLeeway = 200;
 var scrollAnimMilliseconds = 400;
 
+$(window).scroll(function(event){
+  if ($(window).width() < 1400) {
+
+    var st = $(this).scrollTop();
+    if (st > 800) { // if you're scrolling down...
+      document.getElementById("backToTopMobile").style.height = "60px";
+      document.getElementById("backToTopMobileInner").style.marginTop = "0px";
+    
+    }
+    else { // and vice versa when scrolling up
+      document.getElementById("backToTopMobile").style.height = "0px";
+      document.getElementById("backToTopMobileInner").style.marginTop = "-100px";
+    }
+     lastScrollTop = st;
+ }
+});
+
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        // what you want to run in mobile
+
 }
 else {
 
