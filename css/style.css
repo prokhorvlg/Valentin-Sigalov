@@ -69,6 +69,10 @@ a.lightBG:active, a.lightBG:focus {
   box-shadow: inset 0 20px 0 0 rgba(34, 187, 238, 1), 0px 0px 0px 3px rgba(34, 187, 238, 1);
 }
 
+.code {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -1062,11 +1066,12 @@ hr {
 
   text-align: center;
   border: 2px solid rgba(0,0,0, 0.1);
+
   border-radius: 2px;
   margin: 5px;
   background-color: #fff;
 
-  box-shadow: 0px rgba(0,0,0,0), inset 0 0 0px 0 rgba(34, 187, 238, 0.2);
+  box-shadow: 0px rgba(0,0,0,0);
 
   transition: 0.2s ease-in-out;
 }
@@ -1075,16 +1080,20 @@ hr {
 
 .portfolioItem:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 0px 6px rgba(0,0,0, 0.1), inset 0 0 10px 0 rgba(34, 187, 238, 0.2);
+  box-shadow: 0px 0px 0px 6px rgba(42, 181, 232, 0.5);
+  background-color: rgba(0,0,0,0.9);
 
-  border-color: #2bb5e9;
-  color: #2bb5e9;
+  color: #fff;
 }
 
-.portfolioItem:hover .portfolioImageContainer {
-  opacity: 0.9;
-  border-color: #2bb5e9;
-  transform: scale3d(0.9, 0.9, 1);
+.portfolioItem .portfolioImageContainer img {
+  transition: 0.2s ease-in-out;
+}
+
+.portfolioItem:hover .portfolioImageContainer img {
+  opacity: 1;
+  border-color: #fff;
+  transform: scale3d(1.8, 1.8, 1);
 }
 
 .portfolioItem hr {
@@ -1092,7 +1101,7 @@ hr {
 }
 
 .portfolioItem:hover hr {
-  border-color: #2bb5e9;
+  border-color: #fff;
 }
 
 
