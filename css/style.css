@@ -951,6 +951,7 @@ hr {
 
 .modal-content {
   width: 900px;
+  border: none;
 }
 @media (max-width: 920px) {
   .modal-content {
