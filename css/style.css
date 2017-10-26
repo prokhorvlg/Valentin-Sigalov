@@ -1264,7 +1264,7 @@ hr {
   display: none;
 
   height: 60px;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
 
   position: fixed;
@@ -1275,7 +1275,7 @@ hr {
 
   text-align: center;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400px ) {
   .backToTopMobile {
     display: block;
   }
@@ -1283,11 +1283,11 @@ hr {
 
 .backToTopMobile .titleSidebarNavItem{
   margin: 0 auto;
-  width: 60vw;
+  width: 90vw;
 }
 
 .backToTopMobile .titleSidebarNavItem a {
-  width: 60vw;
+  width: 100%;
   
 }
 
