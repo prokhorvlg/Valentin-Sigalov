@@ -168,6 +168,8 @@ hr {
   transition: 0.3s ease-in-out;
   background-color: #0d0d0d;
 
+  /* background: linear-gradient(150deg, #131313 45%, #111111 45%); */
+
   color: #fff;
 
   border-right: 2px solid #fff;
@@ -867,6 +869,11 @@ hr {
 
 .contentPaddingDiv {
   height: 40px; 
+  width: 100%;
+}
+
+.contentPaddingDivBottom {
+  height: 400px; 
   width: 100%;
 }
 
