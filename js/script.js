@@ -169,6 +169,7 @@ function scrolledDown(){
   titleContainerContent1Inner.style.height = "140px";
   titleContainerContent1Inner.style.marginTop = "-20px";
   titleContainerContent1InnerIMG.style.width = "120px";
+  titleContainerContent2.style.overflowY = "auto";
 
   titleContainerContent1.style.height = "30vh";
 
@@ -273,6 +274,7 @@ function scrolledUp(){
     titleContainerContent1Inner.style.height = "180px";
     titleContainerContent1Inner.style.marginTop = "0px";
     titleContainerContent1InnerIMG.style.width = "159px";
+    titleContainerContent2.style.overflowY = "initial";
 
     titleName.style.fontSize = "1.5rem";
     titleName.style.letterSpacing = "1.14em";
