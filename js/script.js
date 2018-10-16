@@ -41,7 +41,7 @@ var scrollLeeway = 200;
 var scrollAnimMilliseconds = 400;
 
 $(window).scroll(function(event){
-  if ($(window).width() < 1400) {
+  if ($(window).width() < 991) {
 
     var st = $(this).scrollTop();
     if (st > 800) { // if you're scrolling down...
@@ -100,11 +100,11 @@ checkHeight();
 
   $(window).scroll(function(event){
     if (scrollListener) {
-      if ($(window).width() > 1400) {
+      if ($(window).width() > 991) {
 
         var st = $(this).scrollTop();
         if (st > lastScrollTop) { // if you're scrolling down...
-          if (scrolledLock == false) { // if the lock hasn't been triggered...
+          if (scrolledLock === false) { // if the lock hasn't been triggered...
             if ($(this).scrollTop() < ($(window).height() - scrollLeeway)){ // if you are scrolling within the header region...
               scrolledLock = true; // lock scrolling...
               setTimeout( function() { scrolledLock = false; }, scrollAnimMilliseconds); // ...until the animation is over
@@ -180,7 +180,7 @@ function scrolledDown(){
   titleContainerContent2Image2.style.opacity = "0";
   titleContainerContent2Image3.style.opacity = "0";
 
-  titleName.style.fontSize = "16px";
+  titleName.style.fontSize = "1.0rem";
   titleName.style.letterSpacing = "0.1em";
   titleName.style.fontWeight = "400";
 
@@ -274,7 +274,7 @@ function scrolledUp(){
     titleContainerContent1Inner.style.marginTop = "0px";
     titleContainerContent1InnerIMG.style.width = "159px";
 
-    titleName.style.fontSize = "30px";
+    titleName.style.fontSize = "1.5rem";
     titleName.style.letterSpacing = "1.14em";
     titleName.style.fontWeight = "300";
 
@@ -299,9 +299,9 @@ function scrolledUp(){
 
   stage3T = setTimeout( function(){ 
 
-    titleContainerContent2Image1.style.marginBottom = "-5px";
-    titleContainerContent2Image2.style.marginBottom = "-5px";
-    titleContainerContent2Image3.style.marginBottom = "-5px";
+    titleContainerContent2Image1.style.marginBottom = "-2px";
+    titleContainerContent2Image2.style.marginBottom = "-2px";
+    titleContainerContent2Image3.style.marginBottom = "-2px";
 
     titleContainerContent2Image1.style.opacity = "1";
     titleContainerContent2Image2.style.opacity = "1";

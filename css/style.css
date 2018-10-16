@@ -1,5 +1,6 @@
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
 }
 
 h1,
@@ -11,6 +12,10 @@ h6 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+p {
+  font-size: 1rem;
+}
+
 /* HEADER SECTION CSS */
 
 #titlePlaceholder {
@@ -18,7 +23,7 @@ h6 {
   height: 100vh;
   width: 100%;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   #titlePlaceholder {
     display: none;
   }
@@ -27,7 +32,7 @@ h6 {
 #insidePlaceholder {
   padding-top: 10%;
   padding-left: 50%;
-  font-size: 30px;
+  font-size: 3.0rem;
 }
 
 .widthOfSidebar {
@@ -38,7 +43,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   body {
     margin: 0;
   }
@@ -74,7 +79,7 @@ a.lightBG:active, a.lightBG:focus {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 hr {
@@ -84,7 +89,7 @@ hr {
 .btn {
   text-transform: uppercase;
   border: 3px solid rgba(34, 187, 238, 1);
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: rgba(34, 187, 238, 1);
   border-radius: 0px;
   box-shadow: inset 0 0 0 0 rgba(34, 187, 238, 1);
@@ -107,12 +112,15 @@ hr {
   padding-top: 15px !important;
 }
 
-
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
 .btnSkip {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .btnSkip {
     width: 100%;
     max-width: 9000px;
@@ -147,7 +155,7 @@ hr {
 
 .buttonCenter h2 {
   letter-spacing: 0.1em;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -175,7 +183,7 @@ hr {
   border-right: 2px solid #fff;
   z-index: 999;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   #titleContainer {
     display: none;
     /*position: relative;
@@ -209,7 +217,7 @@ hr {
 }
 
 .titleName {
-  font-size: 30px;
+  font-size: 3.0rem;
   letter-spacing: 1.14em;
   font-weight: 300;
   transition: 0.3s ease-in-out;
@@ -221,7 +229,7 @@ hr {
   border-width: 2px;
   transition: 0.3s ease-in-out;
 }
-@media (max-width: 1050px) {
+@media (max-width: 991px) {
   .titlehr {
     width: 200px;
   }
@@ -243,7 +251,7 @@ hr {
     animation: bounceArrow 2s infinite;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .scrollArrow {
     margin-bottom: -20px;
   }
@@ -293,7 +301,7 @@ hr {
 
 .scrollDown h2 {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 0.6em;
   color: #2bb5e9;
 }
@@ -344,9 +352,10 @@ hr {
 }
 
 .titleContainerContent2Image {
-  padding-left: 80px;
-  padding-right:  80px;
-  margin-bottom:  -5px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: -2px;
 
   user-select: none;
   transition: 0.3s ease-in-out;
@@ -361,7 +370,9 @@ hr {
 
 .title2desc {
   position: absolute;
-  width: 405px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-left: 2px solid rgba(42, 181, 232, 0);
   border-right: 2px solid rgba(42, 181, 232, 0);
   letter-spacing: 0.4em;
@@ -379,20 +390,22 @@ hr {
 }
 
 #title2descGD {
-  margin-top: -225px;
 }
 
 #title2descWD {
-  margin-top: -170px;
+  margin-top: 50px;
 }
 
 #title2desc3D {
-  margin-top: -225px;
 }
 
 .title2desc h2 {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-bottom: 0;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* MOBILE TITLE PAGE/NAV CSS */
@@ -411,7 +424,7 @@ hr {
   border-right: 2px solid #fff;
   z-index: 999;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   #titleMobile {
     display: flex;
     border-right: 0px solid #fff;
@@ -435,13 +448,13 @@ hr {
 
 .titleMobileName {
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 1.5rem;
   letter-spacing: 1.14em;
   font-weight: 300;
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .titleMobileName {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     font-weight: 400;
   }
@@ -532,7 +545,7 @@ hr {
   padding-left: 1px;
 
   color: white;
-  font-size: 12px;
+  font-size: 1rem;
 
   transition: 0.1s ease-in-out;
 
@@ -594,7 +607,7 @@ hr {
   padding-left: 250px;
   padding-top: 20px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDiv {
     padding-left: 10px;
     padding-right: 10px;
@@ -647,7 +660,7 @@ hr {
   padding-left: 1px;
 
   color: white;
-  font-size: 12px;
+  font-size: 0.8rem;
 
   transition: 0.1s ease-in-out;
 
@@ -665,6 +678,20 @@ hr {
   font-weight: 700;
 
   letter-spacing: 0.2em;
+}
+@media (max-width: 992px){
+  .titleSidebarNavItem a:hover {
+    text-decoration: inherit;
+
+    background-color: inherit;
+    border-right: 2px solid #2bb5e9;
+    border-left: 2px solid #2bb5e9;
+    color: white;
+
+    font-weight: inherit;
+
+    letter-spacing: 0.1em;
+  }
 }
 
 .titleSidebarNavItem a:active, .titleSidebarNavItem a:visited, .titleSidebarNavItem a:focus {
@@ -688,7 +715,7 @@ hr {
   padding-left: 330px;
   padding-bottom: 60px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDivHeader {
     padding-top: 100px;
     padding-left: 0px;
@@ -714,7 +741,7 @@ hr {
 
   border-top: 2px solid white;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDivMobileImage {
     display: flex;
   }
@@ -724,14 +751,14 @@ hr {
 
 .contentDivHeader h2 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 2.0rem;
   letter-spacing: 0.35em;
   font-weight: 300;
 }
 .contentDivHeader h2.modelTitle {
     margin-left: 15px;
   }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDivHeader h2 {
     letter-spacing: 0.2em;
     margin-left: 100px;
@@ -740,9 +767,9 @@ hr {
     margin-left: 115px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .contentDivHeader h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.2em;
     margin-left: 100px;
   }
@@ -764,7 +791,7 @@ hr {
   width: calc( 100vw );
   text-align: right;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDivHeaderImage {
     display: none;
   }
@@ -784,7 +811,7 @@ hr {
   padding-top: 90px;
   padding-bottom: 10px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDivTitle {
     padding-top: 40px;
   }
@@ -792,7 +819,7 @@ hr {
 
 .contentDivTitle h2 {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 1.5rem;
   letter-spacing: 0.35em;
   font-weight: 700;
 }
@@ -803,7 +830,7 @@ hr {
   margin-left: 60px;
   margin-right: 10px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentTitleIcon {
     margin-left: 20px;
   }
@@ -813,7 +840,7 @@ hr {
   letter-spacing: 0.01em;
   font-weight: 700;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .contentDivTitle p {
     margin-top: 20px;
   }
@@ -826,7 +853,7 @@ hr {
   margin-left: -68px;
   opacity: 0.3;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .gridBG {
     display: none;
   }
@@ -836,13 +863,14 @@ hr {
   display: block;
   margin-top: -92px;
   margin-left: -100px;
+  user-select: none;
 }
-@media (max-width: 1400px) {
+@media (max-width: 991px) {
   .barHeader {
     margin-left: 0px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .barHeader {
     display: none;
   }
@@ -852,7 +880,7 @@ hr {
   margin-top: -92px;
   margin-left: 0px;
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .barHeaderMobile {
     display: block;
   }
@@ -891,7 +919,6 @@ hr {
   min-height: 300px;
   flex-wrap: wrap;
 
-  min-width: 480px;
   width: 30vw;
   margin: 0 auto;
 }
@@ -960,7 +987,7 @@ hr {
   width: 900px;
   border: none;
 }
-@media (max-width: 920px) {
+@media (max-width: 991px) {
   .modal-content {
     width: 98vw;
 
@@ -1191,7 +1218,7 @@ hr {
 .GDRow1 .portfolioGDText {
   margin-top: -130px;
 }
-@media (max-width: 922px) {
+@media (max-width: 991px) {
   .GDRow1 {
     width: 466px;
     height: 305px;
@@ -1293,7 +1320,7 @@ hr {
   text-align: center;
   transition: 0.2s ease-in-out;
 }
-@media (max-width: 1400px ) {
+@media (max-width: 991px) {
   .backToTopMobile {
     display: block;
   }
@@ -1316,10 +1343,10 @@ hr {
 
 .backToTopCarat {
   font-weight: 700; 
-  font-size:24px; 
-  line-height:18px;
+  font-size: 1.8rem; 
+  line-height: 18px;
   display: inline-block;
 
   position: relative;
-  top: 8px;
+  top: 10px;
 }
